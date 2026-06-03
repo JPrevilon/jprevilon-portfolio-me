@@ -1,0 +1,23 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">GrapeVyne placeholder interface</title>
+  <desc id="desc">A dark wine discovery and cellar management placeholder.</desc>
+  <rect width="1280" height="720" fill="#070707"/>
+  <rect x="52" y="48" width="1176" height="624" rx="8" fill="#101010" stroke="#2b2b2b"/>
+  <text x="88" y="128" fill="#f7f4ed" font-family="Arial, sans-serif" font-size="44" font-weight="700">GrapeVyne</text>
+  <text x="88" y="168" fill="#a1a1aa" font-family="Arial, sans-serif" font-size="24">Discovery, saved wines, tasting activity</text>
+  <rect x="88" y="216" width="306" height="372" rx="8" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+  <circle cx="241" cy="344" r="78" fill="#c85a52" fill-opacity="0.28" stroke="#f2c879" stroke-opacity="0.55" stroke-width="4"/>
+  <rect x="132" y="464" width="218" height="18" rx="4" fill="#f2c879" fill-opacity="0.55"/>
+  <rect x="132" y="500" width="168" height="18" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+  <rect x="432" y="216" width="760" height="76" rx="8" fill="#151515" stroke="#37d5ff" stroke-opacity="0.3"/>
+  <rect x="432" y="324" width="226" height="264" rx="8" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+  <rect x="700" y="324" width="226" height="264" rx="8" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+  <rect x="966" y="324" width="226" height="264" rx="8" fill="#151515" stroke="#ffffff" stroke-opacity="0.12"/>
+  <rect x="464" y="364" width="162" height="18" rx="4" fill="#f2c879" fill-opacity="0.45"/>
+  <rect x="464" y="410" width="120" height="18" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+  <rect x="732" y="364" width="162" height="18" rx="4" fill="#37d5ff" fill-opacity="0.45"/>
+  <rect x="732" y="410" width="120" height="18" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+  <rect x="998" y="364" width="162" height="18" rx="4" fill="#c85a52" fill-opacity="0.45"/>
+  <rect x="998" y="410" width="120" height="18" rx="4" fill="#ffffff" fill-opacity="0.12"/>
+  <text x="88" y="636" fill="#71717a" font-family="Arial, sans-serif" font-size="20">Replace this placeholder with a production screenshot.</text>
+</svg>

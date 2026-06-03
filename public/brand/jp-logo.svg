@@ -1,0 +1,58 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">Joshua Previlon JP Monogram Logo</title>
+<desc id="desc">A futuristic JP monogram logo with gold and cyan gradients, pulse line, and technical circuit accents.</desc>
+<defs>
+  <radialGradient id="bg" cx="50%" cy="44%" r="70%">
+    <stop offset="0%" stop-color="#171717"/>
+    <stop offset="58%" stop-color="#050607"/>
+    <stop offset="100%" stop-color="#000000"/>
+  </radialGradient>
+  <linearGradient id="gold" x1="196" y1="188" x2="842" y2="835" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#FFF2B8"/>
+    <stop offset="0.32" stop-color="#D89A39"/>
+    <stop offset="0.67" stop-color="#B66A21"/>
+    <stop offset="1" stop-color="#FFE9A3"/>
+  </linearGradient>
+  <linearGradient id="cyan" x1="176" y1="790" x2="846" y2="202" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#45E6FF" stop-opacity="0.95"/>
+    <stop offset="0.5" stop-color="#7C3DFF" stop-opacity="0.7"/>
+    <stop offset="1" stop-color="#FF2F45" stop-opacity="0.85"/>
+  </linearGradient>
+  <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="7" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="28" stdDeviation="34" flood-color="#000000" flood-opacity="0.65"/>
+  </filter>
+  <clipPath id="round">
+    <rect x="64" y="64" width="896" height="896" rx="214"/>
+  </clipPath>
+</defs>
+<g filter="url(#softShadow)">
+  <rect x="64" y="64" width="896" height="896" rx="214" fill="url(#bg)"/>
+  <rect x="78" y="78" width="868" height="868" rx="202" stroke="url(#cyan)" stroke-opacity="0.85" stroke-width="3"/>
+  <rect x="105" y="105" width="814" height="814" rx="178" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+</g>
+<g clip-path="url(#round)">
+  <circle cx="264" cy="221" r="214" fill="#45E6FF" opacity="0.08"/>
+  <circle cx="779" cy="805" r="245" fill="#D89A39" opacity="0.10"/>
+  <path d="M102 701H214L259 642L309 756L369 515L430 701H928" stroke="url(#cyan)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.48" filter="url(#glow)"/>
+  <path d="M147 286H319M147 344H258M147 402H300" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="10" stroke-linecap="round"/>
+  <path d="M753 218H875M753 278H835M753 338H890" stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="10" stroke-linecap="round"/>
+</g>
+<g filter="url(#glow)">
+  <path d="M302 255H425V586C425 706 356 771 250 771C194 771 151 757 119 730L164 635C185 653 211 664 239 664C281 664 302 636 302 583V255Z" fill="url(#gold)"/>
+  <path d="M511 255H688C807 255 884 324 884 430C884 536 807 606 688 606H633V771H511V255ZM681 502C731 502 761 475 761 430C761 385 731 359 681 359H633V502H681Z" fill="url(#gold)"/>
+  <path d="M437 770L510 255H537L464 770H437Z" fill="#45E6FF" opacity="0.76"/>
+</g>
+<g opacity="0.85">
+  <circle cx="206" cy="833" r="8" fill="#45E6FF"/>
+  <circle cx="250" cy="833" r="5" fill="#D89A39"/>
+  <circle cx="294" cy="833" r="5" fill="#FF2F45"/>
+  <path d="M731 833H842" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="5" stroke-linecap="round"/>
+</g>
+</svg>
