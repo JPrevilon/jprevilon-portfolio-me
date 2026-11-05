@@ -76,7 +76,7 @@ export const recruiterSnapshot = [
 ] as const;
 
 export const mediaEdgeIntro =
-  "My music background includes an internship at Republic Records (2016–2019) and a production deal with Sony (2019–2024). That experience shaped how I approach engineering: trace the signal, understand the system, debug calmly, document the workflow, and protect the final user experience.";
+  "My earlier work includes a Republic Records internship and a Sony production deal. That background informs my approach to collaboration, technical problem-solving, and clear delivery.";
 
 export const mediaEdgeCards = [
   {
@@ -103,16 +103,16 @@ export const mediaEdgeCards = [
 
 export const certifications = [
   {
-    title: "Software Engineering Certificate",
-    issuer: "Flatiron School",
+    title: "Bachelor of Science, Computer Science",
+    issuer: "St. John's University",
     description:
-      "Completed May 2026. Full-stack software engineering training covering frontend, backend, databases, and applied product development.",
+      "2016–2018.",
   },
   {
-    title: "Audio Studies, 2014–2016",
+    title: "Associate of Science, Computer Science",
     issuer: "Nassau Community College",
     description:
-      "Audio studies that contributed to a background in music and technical production.",
+      "2014–2016.",
   },
   {
     title: "Foundations of Cybersecurity",

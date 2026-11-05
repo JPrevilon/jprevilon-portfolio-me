@@ -103,7 +103,7 @@ Create these sections:
 5. Experience Timeline
 6. Engineering Strengths
 7. Media / Production Edge
-8. Certifications
+8. Education & Learning
 9. Contact CTA
 
 ## Recruiter Snapshot
@@ -151,7 +151,7 @@ Keep source-backed project details and status accurate:
 - Deer Creek Golf Club: published website preview at https://www.duorya.com/deercreek/, matching Duorya's Preview label. HTML/CSS/JavaScript with a Vite multi-page build, canvas hero, video transitions, and responsive navigation fallbacks. Repository is private; omit source links.
 - Mark the Shark: public website preview at https://marktheshark-preview.vercel.app/, built with Next.js/React/TypeScript/Tailwind, a scroll-driven canvas hero, gallery, and booking-request interface. Repository is private; omit source links. Live production bookings, payment success, client relationships, dates, and metrics are not inferred.
 - Aeterna Spa: live website at https://www.aeternaspa.com/, role Website Developer, source https://github.com/JPrevilon/aeterna. The deployed aeterna-2-site implementation uses HTML/CSS/vanilla JavaScript for its video tour, treatment tabs, comparison sliders, and enquiry interface. Other Next.js/backend code in the repository is a separate implementation; no live checkout, booking-provider, dates, client relationship, or impact metrics are inferred.
-- PULSE: independent venture, 2025–2026; implemented integrations, without claims of verified live production use.
+- PULSE: independent project case study, separate from Pulse Interactive employment; implemented integrations, without claims of verified live production use.
 - GrapeVyne: React/Vite, Python/Flask, SQLAlchemy/PostgreSQL, signed session cookies, and user-owned cellar CRUD. WineService currently uses mock data; external wine provider integration is future work.
 - Martha: early React Native/Expo/TypeScript prototype with speech and device links. Weather and medication data are static samples; AI and automated reminders are future work.
 - Ultara: React/Vite/React Router, TVMaze search/detail data, and localStorage favorites. Genre/network/rating filters are future work.
@@ -176,33 +176,40 @@ Each case study page should include:
 Use a premium case-study layout.
 
 ## Experience timeline
-Create polished timeline cards.
+Use the user's current roles, employment types, dates, and concise responsibilities.
 
-### Founder & Full-Stack Software Engineer — Duorya (Self-employed)
-Dates: August 2026 – Present
+### Founder & Full-Stack Software Engineer — Duorya
+Employment type: Freelance
+Dates: 2026 – Present
 
-- Self-employed software and website work, including client storefront work for Perfume Plug USA.
+- Built and launched responsive websites, including Aeterna Spa, with HTML, CSS, and JavaScript.
+- Developed cinematic previews for Deer Creek and LYC using scroll-driven media and responsive interfaces.
 
-### Founder & Developer — PULSE (Independent Venture)
-Dates: 2025 – 2026
+### Web Developer — Pulse Interactive
+Employment type: Contract
+Dates: November 2024 – November 2025
 
-- Independent venture focused on real-time streaming, engagement, dashboards, and full-stack application development.
+- Developed and maintained responsive web interfaces with React and TypeScript.
 
-### Owner & Developer — White Sapphire (Self-owned Independent Venture)
-Dates: 2024 – 2025
+### Full-Stack Engineer — White Sapphire
+Employment type: Full-time
+Dates: 2020 – 2024
 
-- Self-owned venture involving web application development, frontend interfaces, APIs, and database workflows.
-- Do not publish unsupported performance percentages or imply employment at a separate company.
+- Developed and maintained web application features using Node.js, TypeScript, and PostgreSQL.
 
-### Music Producer — Sony (Production Deal)
-Dates: 2019 – 2024
+### Music Producer — Sony Production Deal
+Employment type: Contract
+Dates: 2017 – 2020
 
-- Music production under a production deal; do not describe this as staff employment.
+- Music production under a Sony production deal.
 
 ### Intern — Republic Records
-Dates: 2016 – 2019
+Employment type: Internship
+Dates: 2016 – 2017
 
-- Internship at Republic Records, 2016–2019.
+- Internship experience at Republic Records.
+
+The independent PULSE project case study is separate from the Pulse Interactive employment entry.
 
 ## Technical stack section
 Group skills into beautiful cards.
@@ -242,7 +249,7 @@ Create cards for:
 This should not make Joshua look like only an audio engineer. It should make the media background feel like a software advantage.
 
 Copy:
-> My music background includes an internship at Republic Records (2016–2019) and a production deal with Sony (2019–2024). That background shaped how I approach engineering: trace the signal, understand the system, debug calmly, document the workflow, and protect the final user experience.
+> My earlier work includes a Republic Records internship and a Sony production deal. That background informs my approach to collaboration, technical problem-solving, and clear delivery.
 
 Use cards:
 - Signal flow → System debugging
@@ -250,10 +257,10 @@ Use cards:
 - Asset handoffs → Content/workflow systems
 - Client deadlines → Clear communication under pressure
 
-## Certifications
+## Education and continued learning
 Include:
-- Flatiron School — Software Engineering Certificate, completed May 2026
-- Nassau Community College — Audio Studies, 2014–2016 (do not imply a degree)
+- St. John's University — Bachelor of Science, Computer Science, 2016–2018
+- Nassau Community College — Associate of Science, Computer Science, 2014–2016
 - Google — Foundations of Cybersecurity
 - Anthropic — AI Fluency: Framework & Foundations
 - Claude — Code in Action / Claude 101

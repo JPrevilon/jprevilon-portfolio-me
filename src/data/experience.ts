@@ -1,6 +1,7 @@
 export type ExperienceItem = {
   title: string;
   company: string;
+  employmentType: string;
   dates: string;
   location?: string;
   bullets: string[];
@@ -8,53 +9,49 @@ export type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
-    title: "Founder & Full-Stack Software Engineer — Self-employed",
+    title: "Founder & Full-Stack Software Engineer",
     company: "Duorya",
-    dates: "Aug 2026 - Present",
+    employmentType: "Freelance",
+    dates: "2026 - Present",
     bullets: [
-      "Build websites and software through a self-employed practice, including client storefront work for Perfume Plug USA.",
-      "Work across interface development, API integration, troubleshooting, and deployment workflows.",
+      "Built and launched responsive websites, including Aeterna Spa, with HTML, CSS, and JavaScript.",
+      "Developed cinematic previews for Deer Creek and LYC using scroll-driven media and responsive interfaces.",
     ],
   },
   {
-    title: "Founder & Developer",
-    company: "PULSE — Independent Venture",
-    dates: "2025 - 2026",
-    location: "Remote",
+    title: "Web Developer",
+    company: "Pulse Interactive",
+    employmentType: "Contract",
+    dates: "Nov 2024 - Nov 2025",
     bullets: [
-      "Built and led development of PULSE, a real-time streaming and business engagement platform focused on live activity data, dynamic rankings, creator/venue workflows, monetized boosts, dashboards, and operational tools.",
-      "Built data-heavy React/Next.js and TypeScript interfaces for live activity streams, ranking systems, dashboard views, admin workflows, and user-facing platform states.",
-      "Integrated frontend workflows with Node.js/Express APIs, PostgreSQL-backed data models, authentication, engagement metrics, payment/boost logic, and structured JSON API contracts.",
-      "Worked across frontend and backend layers to debug data flow issues, API behavior, user state, service boundaries, and production-style workflow problems.",
-      "Took ownership from concept through implementation: clarifying requirements, defining product behavior, building features, QA testing, documenting issues, and iterating toward production-ready releases.",
+      "Developed and maintained responsive web interfaces with React and TypeScript.",
     ],
   },
   {
-    title: "Owner & Developer",
-    company: "White Sapphire — Self-owned Independent Venture",
-    dates: "2024 - 2025",
-    location: "Remote",
+    title: "Full-Stack Engineer",
+    company: "White Sapphire",
+    employmentType: "Full-time",
+    dates: "2020 - 2024",
     bullets: [
-      "Developed customer-facing and operational web applications using React, TypeScript, JavaScript, Node.js, Express, REST APIs, SQL-backed workflows, and cloud-hosted deployment patterns.",
-      "Built React/TypeScript UI for data-heavy workflows including dashboards, reporting views, filtering, status states, forms, and operational product interfaces.",
-      "Integrated frontend applications with Node.js/Express APIs, SQL-backed data models, REST services, JSON contracts, authentication flows, and backend service boundaries.",
-      "Worked on debugging, query refinement, frontend performance, and test coverage while developing the venture's applications.",
+      "Developed and maintained web application features using Node.js, TypeScript, and PostgreSQL.",
     ],
   },
   {
     title: "Music Producer — Production Deal",
     company: "Sony",
-    dates: "2019 - 2024",
+    employmentType: "Contract",
+    dates: "2017 - 2020",
     bullets: [
-      "Worked in music production under a production deal with Sony.",
+      "Music production under a Sony production deal.",
     ],
   },
   {
     title: "Intern",
     company: "Republic Records",
-    dates: "2016 - 2019",
+    employmentType: "Internship",
+    dates: "2016 - 2017",
     bullets: [
-      "Internship at Republic Records, 2016–2019.",
+      "Internship experience at Republic Records.",
     ],
   },
 ];

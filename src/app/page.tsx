@@ -269,7 +269,7 @@ export default function Home() {
                         {item.title}
                       </h3>
                       <p className="mt-2 text-sm text-zinc-300 sm:text-base">
-                        {item.company}
+                        {item.company} · {item.employmentType}
                       </p>
                       {item.location ? (
                         <p className="mt-1 text-sm text-zinc-500">
@@ -369,9 +369,9 @@ export default function Home() {
             <SectionHeading
               id="certifications-title"
               eyebrow="Education & Learning"
-              title="Software training, audio studies, and continued learning."
+              title="Computer science education and continued learning."
             >
-              Formal software training, audio studies, security
+              Computer science degrees, security
               fundamentals, and modern AI workflow learning.
             </SectionHeading>
           </Reveal>
