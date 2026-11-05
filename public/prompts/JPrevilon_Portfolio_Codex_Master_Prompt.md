@@ -46,7 +46,7 @@ Title: Software Engineer
 Secondary title: Full-Stack Engineer | React • TypeScript • Node.js  
 Location: Miami, FL | Remote / NYC Hybrid Open  
 Email: joshuaprevilon13@gmail.com  
-LinkedIn: https://www.linkedin.com/in/jprevilon  
+LinkedIn: https://www.linkedin.com/in/jprevilon/
 GitHub: https://github.com/JPrevilon
 
 ## Main positioning
@@ -125,14 +125,14 @@ Real-time engagement platforms, streaming-adjacent workflows, content discovery,
 Use this order:
 1. Pulse — Real-Time Streaming & Operational Dashboard Platform
 2. GrapeVyne — Data-Heavy Wine Discovery & Personal Cellar Platform
-3. Martha — AI Assistant / User Workflow Application
+3. Martha — React Native / Expo Daily Assistant Prototype
 4. Ultara — TV Discovery & Media Data Application
 5. Media Observability Dashboard — React, TypeScript & GraphQL Infrastructure UI Prototype
 
 Use project data from `/src/data/projects.ts`. If the file does not exist, create it using the content from the attached `content/projects.ts` file.
 
 Each project card should include:
-- Screenshot image
+- Case-study image, with concept illustrations labeled clearly
 - Name
 - Subtitle
 - Role
@@ -142,7 +142,14 @@ Each project card should include:
 - Top 2–3 highlights
 - Buttons: Case Study, GitHub, Live Demo if available
 
-If live demos are missing, do not invent them. Hide the button or show “Demo coming soon.”
+If live demos are missing, do not invent them. Hide the button.
+
+Keep source-backed project details and status accurate:
+- PULSE: independent venture, 2025–2026; implemented integrations, without claims of verified live production use.
+- GrapeVyne: React/Vite, Python/Flask, SQLAlchemy/PostgreSQL, signed session cookies, and user-owned cellar CRUD. WineService currently uses mock data; external wine provider integration is future work.
+- Martha: early React Native/Expo/TypeScript prototype with speech and device links. Weather and medication data are static samples; AI and automated reminders are future work.
+- Ultara: React/Vite/React Router, TVMaze search/detail data, and localStorage favorites. Genre/network/rating filters are future work.
+- Media Observability Dashboard: prototype with a concept illustration.
 
 ## Dynamic project pages
 Create `/projects/[slug]` pages.
@@ -165,17 +172,17 @@ Use a premium case-study layout.
 ## Experience timeline
 Create polished timeline cards.
 
-### Founder / Software Engineer — Duorya (Self-employed)
+### Founder & Full-Stack Software Engineer — Duorya (Self-employed)
 Dates: August 2026 – Present
 
 - Self-employed software and website work, including client storefront work for Perfume Plug USA.
 
-### Founder / Full-Stack Engineer — PULSE (Independent Venture)
+### Founder & Developer — PULSE (Independent Venture)
 Dates: 2025 – 2026
 
 - Independent venture focused on real-time streaming, engagement, dashboards, and full-stack application development.
 
-### Founder / Web Software Engineer — White Sapphire (Self-owned Independent Venture)
+### Owner & Developer — White Sapphire (Self-owned Independent Venture)
 Dates: 2024 – 2025
 
 - Self-owned venture involving web application development, frontend interfaces, APIs, and database workflows.
@@ -186,10 +193,10 @@ Dates: 2019 – 2024
 
 - Music production under a production deal; do not describe this as staff employment.
 
-### Audio Engineering Intern — Republic Records
+### Intern — Republic Records
 Dates: 2016 – 2019
 
-- Audio engineering and music production internship.
+- Internship at Republic Records, 2016–2019.
 
 ## Technical stack section
 Group skills into beautiful cards.
@@ -242,7 +249,7 @@ Include:
 - Flatiron School — Software Engineering Certificate, completed May 2026
 - Nassau Community College — Audio Studies, 2014–2016 (do not imply a degree)
 - Google — Foundations of Cybersecurity
-- Anthropic — AI Fluency Framework & Foundations
+- Anthropic — AI Fluency: Framework & Foundations
 - Claude — Code in Action / Claude 101
 
 ## Contact section

@@ -24,7 +24,7 @@ export const profile = {
   secondaryTitle: "Full-Stack Engineer | React | TypeScript | Frontend Infrastructure",
   location: "Miami, FL | Remote / NYC Hybrid Open",
   email: "joshuaprevilon13@gmail.com",
-  linkedin: "https://www.linkedin.com/in/jprevilon",
+  linkedin: "https://www.linkedin.com/in/jprevilon/",
   github: "https://github.com/JPrevilon",
   resumePath: "/Joshua_Previlon_Resume.pdf",
   positioning:
@@ -121,7 +121,7 @@ export const certifications = [
       "Security fundamentals for risk awareness, systems thinking, and safer software development habits.",
   },
   {
-    title: "AI Fluency Framework & Foundations",
+    title: "AI Fluency: Framework & Foundations",
     issuer: "Anthropic",
     description:
       "Foundational AI fluency for modern software workflows, evaluation habits, and responsible AI product thinking.",

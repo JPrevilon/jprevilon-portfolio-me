@@ -17,6 +17,7 @@ export type Project = {
   caseStudyImageAlt: string;
   caseStudyImageWidth: number;
   caseStudyImageHeight: number;
+  visualNote?: string;
   problem: string;
   architecture: string[];
   decisions: string[];
@@ -33,7 +34,7 @@ export const projects: Project[] = [
     slug: "pulse",
     name: "Pulse",
     subtitle: "Real-Time Streaming & Operational Dashboard Platform",
-    role: "Founder / Full-Stack Engineer — Independent Venture",
+    role: "Founder & Developer — Independent Venture",
     status: "Featured",
     image: "/screenshots/pulse.png",
     imageAlt: "Pulse real-time streaming platform dashboard and architecture visual",
@@ -93,6 +94,9 @@ export const projects: Project[] = [
       "Introduce deeper automated regression coverage for core dashboard workflows.",
       "Expand analytics views for creator, venue, and platform-level trends.",
     ],
+    links: {
+      github: "https://github.com/JPrevilon/PULSE",
+    },
   },
   {
     slug: "grapevyne",
@@ -108,23 +112,23 @@ export const projects: Project[] = [
     caseStudyImageWidth: 1920,
     caseStudyImageHeight: 1080,
     description:
-      "Built a full-stack discovery and personal cellar platform with authenticated data workflows, structured user-owned records, reusable UI states, and search/filter patterns for content-heavy product surfaces.",
+      "Built a wine discovery and personal cellar MVP with React, Flask, PostgreSQL, session authentication, and user-owned cellar records. Wine discovery currently uses local mock data behind a replaceable WineService abstraction.",
     tech: [
       "React",
-      "Next.js",
-      "TypeScript",
-      "Node.js",
+      "JavaScript",
+      "Vite",
+      "React Router",
+      "Python",
+      "Flask",
       "PostgreSQL",
+      "SQLAlchemy",
       "REST APIs",
-      "Authentication",
-      "Data Modeling",
-      "Workflow UI",
-      "Protected Routes",
+      "Session Authentication",
     ],
     highlights: [
-      "Built authentication, protected routes, CRUD workflows, relational data models, filtering, API integrations, and structured user-owned records.",
-      "Developed reusable React/TypeScript UI states for saved records, search/filter behavior, forms, and predictable frontend/backend data handling.",
-      "Designed a clean product workflow around structured content, saved wines, tasting activity, and personal cellar management.",
+      "Implemented signup, login, logout, session restore, and protected cellar/profile routes with a Flask API.",
+      "Built cellar CRUD for saved bottles, tasting notes, ratings, occasions, and favorites; server queries filter entries by the authenticated user's ID.",
+      "Built React discovery/detail views and Open Cellar shelves, with a mock-data wine service that can later connect to an external provider.",
     ],
     roleFit: [
       "Data-heavy product UI",
@@ -132,85 +136,89 @@ export const projects: Project[] = [
       "Structured content workflows",
     ],
     caseStudyAngle:
-      "Data-heavy UI, frontend state architecture, relational models, content discovery, and user-owned data.",
+      "Full-stack MVP, session authentication, relational data modeling, user-owned records, and a mock-data service boundary.",
     problem:
       "Wine discovery can become scattered across saved lists, tasting notes, favorites, and content feeds unless the product centers structured user-owned records.",
     architecture: [
-      "Protected React routes separate authenticated cellar management from public discovery flows.",
-      "REST endpoints coordinate saved wines, cellar records, tasting activity, and search/filter requests.",
-      "Relational PostgreSQL models keep user-owned cellar data consistent, queryable, and easier to reason about from the UI.",
+      "React/Vite and React Router provide discovery, wine detail, login, profile, and cellar interfaces.",
+      "Flask routes use signed HTTP-only session cookies and pass the current user's ID to cellar services.",
+      "SQLAlchemy models relate users, wines, and cellar entries in PostgreSQL; WineService currently searches local mock wine data.",
     ],
     decisions: [
-      "Kept cellar actions close to the wine detail context to reduce workflow jumps.",
-      "Used reusable record cards and state patterns for saved wines, favorites, and tasting activity.",
-      "Designed filters around user intent instead of exposing raw database fields.",
+      "Separated wine discovery behind a backend WineService so the mock provider can be replaced without changing the frontend contract.",
+      "Kept cellar entry ownership checks in server-side queries.",
+      "Used related User, Wine, and CellarEntry records for saved bottle and tasting workflows.",
     ],
     quality: [
-      "Checked authenticated route behavior, saved-record workflows, and form states across user-owned data paths.",
-      "Modeled predictable API responses so frontend state updates stayed traceable.",
-      "Designed empty and error states for search, saved wines, and cellar management flows.",
+      "Includes validation responses, loading/error/empty states, and feedback for key user actions.",
+      "Cellar routes require authentication and query records with the current user's ID.",
+      "This case study documents the MVP implementation with public source and a mock wine data provider.",
     ],
     improvements: [
-      "Add richer tasting history analytics and cellar recommendations.",
-      "Support import/export workflows for cellar records.",
-      "Increase end-to-end coverage around authenticated CRUD flows.",
+      "Connect a real wine data provider through WineService.",
+      "Add advanced cellar filtering, sorting, and inventory quantities.",
+      "Expand automated coverage of authenticated CRUD and ownership checks.",
     ],
+    links: {
+      github: "https://github.com/JPrevilon/GRAPEVYNE",
+    },
   },
   {
     slug: "martha",
     name: "Martha",
-    subtitle: "AI Assistant / User Workflow Application",
-    role: "Frontend / Full-Stack Engineer",
-    status: "Case Study",
+    subtitle: "React Native / Expo Daily Assistant Prototype",
+    role: "Mobile Prototype Developer",
+    status: "Prototype",
     image: "/projects/martha_placeholder.png",
     imageAlt: "Martha AI assistant workflow interface concept",
     caseStudyImage: "/projects/martha_placeholder.png",
     caseStudyImageAlt: "Martha AI assistant workflow case study visual",
     caseStudyImageWidth: 1280,
     caseStudyImageHeight: 720,
+    visualNote: "Concept illustration of the intended assistant interface; the current repository is an early mobile prototype.",
     description:
-      "Built a mobile-first AI assistant experience with structured workflow states, API integrations, error recovery, and interaction patterns designed to keep automated actions understandable.",
+      "Built an early React Native/Expo daily assistant prototype with a spoken greeting, static sample weather and medication information, and device links for ride, call, and SMS actions. AI services and reminder automation are future work.",
     tech: [
-      "React",
+      "React Native",
+      "Expo",
       "TypeScript",
-      "API Integrations",
-      "Responsive UI",
-      "AI Workflows",
-      "Workflow State",
+      "Expo Router",
+      "Expo Speech",
+      "Device Deep Links",
     ],
     highlights: [
-      "Built reusable UI components for API status, user input, assistant responses, routine steps, and error handling.",
-      "Designed clear workflow paths for routines, reminders, and personal assistant interactions without hiding important state changes.",
-      "Focused on accessible, mobile-first interaction patterns and iterative product delivery.",
+      "Built a mobile home screen with assistant-themed cards and static sample information.",
+      "Added a spoken greeting using Expo Speech.",
+      "Added device links for ride, phone, and SMS actions; medication and grocery controls are interface placeholders.",
     ],
     roleFit: [
-      "Workflow automation UI",
-      "API state handling",
-      "Error recovery paths",
+      "Mobile interface prototype",
+      "Speech interaction",
+      "Device action links",
     ],
     caseStudyAngle:
-      "AI workflow UI, API-driven frontend state, and user-facing automation.",
+      "Early mobile prototyping, speech interaction, and device action links.",
     problem:
-      "Personal assistant tools need to feel calm and reliable even when API responses, user routines, reminders, and edge cases create branching states.",
+      "Explore a simple mobile home screen that brings everyday information and device actions into one calm interface.",
     architecture: [
-      "Mobile-first React UI components organize assistant responses, routine steps, reminders, and error recovery.",
-      "API integrations pass structured user workflow data between the interface and assistant logic.",
-      "Accessible interaction patterns keep automated actions clear on small screens.",
+      "React Native components and Expo Router organize the mobile prototype.",
+      "Expo Speech handles the greeting; React Native Linking delegates supported actions to device handlers.",
+      "Weather and medication information are static samples; AI and reminder services remain future work.",
     ],
     decisions: [
-      "Designed workflow states before polishing visuals so the assistant felt dependable.",
-      "Separated API status, user input, and response display into reusable UI pieces.",
-      "Made error states actionable instead of leaving users in vague failure modes.",
+      "Used Expo to explore a mobile interface across supported platforms.",
+      "Kept speech and device-link actions separate from the static information cards.",
+      "Left future assistant and reminder services outside the current prototype scope.",
     ],
     quality: [
-      "Tested mobile responsive states across routine, reminder, and assistant response flows.",
-      "Handled API failures with retry-oriented UI copy and clear user recovery paths.",
-      "Kept interaction patterns keyboard and screen-size aware for accessibility.",
+      "The current repository is an early prototype with sample information and incomplete controls.",
+      "Device-link behavior depends on installed handlers and device permissions.",
+      "Automated reminders, AI responses, and broader device validation remain follow-up work.",
     ],
     improvements: [
-      "Add stronger personalization controls for routines and reminders.",
-      "Introduce conversation history search and saved assistant actions.",
-      "Expand test coverage around API failure and retry behavior.",
+      "Implement medication and grocery interactions with persistent data.",
+      "Add a real reminder service and any assistant API integrations.",
+      "Validate speech, device links, accessibility, and error handling on target devices.",
     ],
     links: {
       github: "https://github.com/JPrevilon/MARTHA",
@@ -220,7 +228,7 @@ export const projects: Project[] = [
     slug: "ultara",
     name: "Ultara",
     subtitle: "TV Discovery & Media Data Application",
-    role: "Full-Stack Engineer",
+    role: "Frontend Developer",
     status: "Code Sample",
     image: "/projects/ultara_placeholder.png",
     imageAlt: "Ultara TV discovery and media data interface concept",
@@ -229,11 +237,15 @@ export const projects: Project[] = [
       "Ultara TV discovery and media data case study visual",
     caseStudyImageWidth: 1280,
     caseStudyImageHeight: 720,
+    visualNote: "Concept illustration of the media discovery interface; see the repository for the current code sample.",
     description:
-      "Built a TV discovery app around live TVMaze data, media metadata normalization, search/filter workflows, responsive UI states, and API-driven product behavior.",
+      "Built a React/Vite TV discovery code sample using the public TVMaze API, route-based search and detail views, and a Favorites Vault saved in localStorage.",
     tech: [
       "JavaScript",
       "React",
+      "Vite",
+      "React Router",
+      "LocalStorage",
       "API Integrations",
       "Media Data",
       "Content Discovery",
@@ -241,7 +253,7 @@ export const projects: Project[] = [
     ],
     highlights: [
       "Integrated live third-party media data through API-driven frontend workflows.",
-      "Built discovery, search, and structured content browsing experiences around normalized media metadata.",
+      "Built query-based search, show/cast/episode details, recent and suggested searches, and a localStorage Favorites Vault.",
       "Handled missing imagery, incomplete metadata, and responsive presentation as expected product states.",
     ],
     roleFit: [
@@ -255,7 +267,7 @@ export const projects: Project[] = [
       "Media discovery interfaces need to turn noisy third-party data into browseable, searchable, and responsive content experiences without overwhelming users.",
     architecture: [
       "React UI components consume external media API data and normalize it into discovery cards and detail views.",
-      "Search and filter state drive content browsing without requiring users to understand the underlying API structure.",
+      "React Router and URL query parameters drive search/detail views; localStorage persists favorites on the current device.",
       "Responsive layouts keep media metadata usable across desktop and mobile screens.",
     ],
     decisions: [
@@ -269,9 +281,9 @@ export const projects: Project[] = [
       "Kept the code sample focused on readable data flow and predictable component state.",
     ],
     improvements: [
-      "Add saved lists and persistent user preferences.",
+      "Add genre, network, or rating filters and a recently viewed section.",
       "Layer in stronger caching, API fallback behavior, and clearer degraded states.",
-      "Add automated tests around search, filtering, and missing-data states.",
+      "Add automated tests around search, favorites, and missing-data states.",
     ],
     links: {
       github: "https://github.com/JPrevilon/ULTARA",
@@ -290,6 +302,7 @@ export const projects: Project[] = [
       "Media observability dashboard infrastructure case study visual",
     caseStudyImageWidth: 1280,
     caseStudyImageHeight: 720,
+    visualNote: "Concept illustration of a proposed observability dashboard prototype.",
     description:
       "Prototyped a frontend infrastructure dashboard for media operations, modeling service health, job status, logs, metrics-style panels, pipeline events, filters, loading/error states, and GraphQL data patterns.",
     tech: [

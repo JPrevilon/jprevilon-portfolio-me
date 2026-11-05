@@ -264,7 +264,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <List items={project.quality} />
             </CaseStudySection>
 
-            <CaseStudySection title="Screenshots">
+            <CaseStudySection title={project.visualNote ? "Concept Visual" : "Screenshots"}>
               <figure className="overflow-hidden rounded-lg border border-white/10 bg-[#0b0b0b]">
                 <Image
                   src={project.caseStudyImage}
@@ -274,7 +274,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   className="h-auto w-full object-cover"
                 />
                 <figcaption className="border-t border-white/10 px-4 py-3 text-sm text-zinc-400">
-                  {project.name} visual reference.
+                  {project.visualNote ?? `${project.name} visual reference.`}
                 </figcaption>
               </figure>
             </CaseStudySection>

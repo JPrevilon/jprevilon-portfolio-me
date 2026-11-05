@@ -8,7 +8,7 @@ export type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
-    title: "Founder / Software Engineer — Self-employed",
+    title: "Founder & Full-Stack Software Engineer — Self-employed",
     company: "Duorya",
     dates: "Aug 2026 - Present",
     bullets: [
@@ -17,7 +17,7 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    title: "Founder / Full-Stack Engineer",
+    title: "Founder & Developer",
     company: "PULSE — Independent Venture",
     dates: "2025 - 2026",
     location: "Remote",
@@ -30,7 +30,7 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    title: "Founder / Web Software Engineer",
+    title: "Owner & Developer",
     company: "White Sapphire — Self-owned Independent Venture",
     dates: "2024 - 2025",
     location: "Remote",
@@ -42,17 +42,6 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    title: "Creative Web Producer / Founder",
-    company: "FREEPOWER Clothing & Freelance Digital Campaigns",
-    dates: "2024 - Present",
-    bullets: [
-      "Built and managed e-commerce and campaign pages using Shopify, Wix, GoDaddy, structured content workflows, theme edits, product content, media assets, and launch QA.",
-      "Created web-ready digital assets, product mockups, social campaign visuals, and content updates using Figma, Photoshop, and Premiere Pro.",
-      "Prepared images and video for web use through resizing, exporting, compression, file organization, SEO-aware copy, and responsive page checks.",
-      "Strengthened practical product sense across brand, content, usability, conversion, and web production workflows.",
-    ],
-  },
-  {
     title: "Music Producer — Production Deal",
     company: "Sony",
     dates: "2019 - 2024",
@@ -61,11 +50,11 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    title: "Audio Engineering Intern",
+    title: "Intern",
     company: "Republic Records",
     dates: "2016 - 2019",
     bullets: [
-      "Gained audio engineering and music production experience through an internship.",
+      "Internship at Republic Records, 2016–2019.",
     ],
   },
 ];
