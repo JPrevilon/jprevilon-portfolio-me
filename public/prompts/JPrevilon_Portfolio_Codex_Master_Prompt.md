@@ -10,7 +10,7 @@ This guide records the confirmed public content used by the portfolio. Keep role
 - Contact: joshua@duorya.com
 - LinkedIn: https://www.linkedin.com/in/jprevilon/
 - GitHub: https://github.com/JPrevilon
-- Availability: Seeking full-time front-end or full-stack engineering opportunities; open to remote opportunities.
+- Availability: Seeking full-time front-end or full-stack engineering opportunities in Miami, New York, or remotely within the US. Other US locations require employer-paid moving costs and temporary housing.
 
 ## Experience
 
@@ -25,8 +25,9 @@ Founder & Full-Stack Software Engineer | Freelance | 2026 - Present
 
 Front-End Engineer | Self-employed | Nov 2024 - Nov 2025
 
-- Built a city-based venue-streaming application with Next.js, React, TypeScript, Node.js/Express APIs, and PostgreSQL.
-- Implemented JWT-protected API routes and Socket.IO updates for venue-streaming and activity workflows.
+- Built React/TypeScript city-discovery screens with API-fed venue cards, upcoming streams, and refreshed venue rankings.
+- Connected venue watch pages to Amazon IVS playback and Socket.IO events for chat, reactions, and live viewer counts.
+- Built Node.js/Express APIs with PostgreSQL models and JWT-protected routes.
 
 PULSE is the application developed through this owned venture. Associate the PULSE case study with this experience; do not portray it as a separate employer or live service.
 
@@ -49,11 +50,13 @@ Web Developer | Self-employed | 2020 - 2024
 
 ## Project Status and Links
 
+Lead the portfolio list with GrapeVyne and PULSE application evidence, followed by the live Aeterna website and the website previews.
+
 - Aeterna Spa — Live Website. HTML/CSS/JavaScript, scroll-driven video tour, treatment tabs, comparison sliders, and enquiry form validation. Live: https://www.aeternaspa.com/ ; public source: https://github.com/JPrevilon/aeterna . Do not infer completed online booking or payments.
 - Deer Creek — Website Preview. HTML/CSS/JavaScript with Vite, multi-page course and venue content, video/canvas interactions, mobile and reduced-motion fallbacks. Preview: https://www.duorya.com/deercreek/ . Source is private; omit its repository URL. Enquiry forms require backend delivery before being described as operational.
 - Mark the Shark — Website Preview. Next.js/React/TypeScript, canvas hero, responsive navigation, category-filtered gallery and keyboard-operable lightbox. Preview: https://marktheshark-preview.vercel.app/ . Source is private; omit its repository URL. Do not claim production booking/payment integration.
 - PULSE — Application case study from the owned Pulse Interactive venture. Next.js/React/TypeScript, Node.js/Express, PostgreSQL, JWT-protected routes and Socket.IO updates. Public source: https://github.com/JPrevilon/PULSE . No verified public live deployment, production users, successful payments, or ticket integrations.
-- GrapeVyne — Application case study. React/Vite/JavaScript frontend, Flask/Python/SQLAlchemy API, PostgreSQL, session authentication and user-scoped collection CRUD. Wine discovery uses mock WineService data. Public source: https://github.com/JPrevilon/GRAPEVYNE . Do not claim Three.js models, JWT, a live external wine API, or production users.
+- GrapeVyne — Live Demo: https://grapevyne-ten.vercel.app/ . React/Vite/JavaScript frontend, Flask/Python/SQLAlchemy API, PostgreSQL, Secure HTTP-only session authentication and persistent account-scoped collection CRUD. The public browser flow and owner-isolation API checks passed. Wine discovery, prices, and ratings use clearly labeled sample data. Public source: https://github.com/JPrevilon/GRAPEVYNE . Do not claim Three.js models, JWT, a live external wine API, or real production users.
 - Martha — React Native/Expo/TypeScript prototype with speech and device actions. Weather and medication information are static samples. AI responses and reminder automation are future work.
 - ULTARA — React/Vite/JavaScript code sample using the TVMaze API and localStorage favorites. Keep advanced features labeled as future work.
 - Media Observability Dashboard is a legacy concept route, omitted from the recruiter-facing project list. Do not use it as evidence of infrastructure or observability expertise.

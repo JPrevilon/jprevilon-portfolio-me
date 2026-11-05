@@ -22,7 +22,7 @@ export const profile = {
   "title": "Software Engineer",
   "secondaryTitle": "React, TypeScript & Next.js | Front-End & Full-Stack Applications",
   "location": "Miami-Fort Lauderdale, FL",
-  "availability": "Seeking full-time front-end or full-stack engineering opportunities; open to remote opportunities.",
+  "availability": "Seeking full-time front-end or full-stack engineering opportunities in Miami, New York, or remotely within the US. Other US locations require employer-paid moving costs and temporary housing.",
   "email": "joshua@duorya.com",
   "linkedin": "https://www.linkedin.com/in/jprevilon/",
   "github": "https://github.com/JPrevilon",
@@ -30,9 +30,9 @@ export const profile = {
   "positioning": "I build responsive websites, React and TypeScript interfaces, and full-stack applications with connected data.",
   "about": "I am a software developer based in Miami–Fort Lauderdale. My work includes responsive business websites, React and TypeScript interfaces, and applications using Node.js/Express or Flask with PostgreSQL. Selected projects show their current live, preview, or application status.",
   "headline": "Building responsive websites and front-end/full-stack applications.",
-  "supportingCopy": "My work spans published websites, cinematic website previews, a venue-streaming application, and a wine collection application. I use React, TypeScript, JavaScript, and connected APIs where the project calls for them.",
+  "supportingCopy": "My work includes a live wine-cellar demo, published websites, cinematic website previews, and a venue-streaming application. I use React, TypeScript, JavaScript, and connected APIs where the project calls for them.",
   "focus": "React and TypeScript interfaces, responsive websites, Node.js/Express or Flask APIs, and PostgreSQL-backed applications.",
-  "contactCta": "Seeking full-time front-end or full-stack engineering opportunities; open to remote opportunities."
+  "contactCta": "Seeking full-time front-end or full-stack engineering opportunities in Miami, New York, or remotely within the US. Other US locations require employer-paid moving costs and temporary housing."
 } as const;
 
 export const resumeDownloads = [
@@ -81,7 +81,7 @@ export const recruiterSnapshot = [
 export const aboutCards = [
   {
     "title": "Full-time opportunities",
-    "description": "Seeking full-time front-end or full-stack engineering opportunities; open to remote opportunities."
+    "description": "Seeking full-time front-end or full-stack engineering opportunities in Miami, New York, or remotely within the US. Other US locations require employer-paid moving costs and temporary housing."
   },
   {
     "title": "Earlier experience",

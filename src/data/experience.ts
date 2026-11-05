@@ -23,8 +23,9 @@ export const experience: ExperienceItem[] = [
     "company": "Pulse Interactive",
     "dates": "Nov 2024 - Nov 2025",
     "bullets": [
-      "Built a city-based venue-streaming application with Next.js, React, TypeScript, Node.js/Express APIs, and PostgreSQL.",
-      "Implemented JWT-protected API routes and Socket.IO updates for venue-streaming and activity workflows."
+      "Built React/TypeScript city-discovery screens with API-fed venue cards, upcoming streams, and refreshed venue rankings.",
+      "Connected venue watch pages to Amazon IVS playback and Socket.IO events for chat, reactions, and live viewer counts.",
+      "Built Node.js/Express APIs with PostgreSQL models and JWT-protected routes."
     ],
     "employmentType": "Self-employed",
     "projectPath": "/projects/pulse"

@@ -1,4 +1,4 @@
-export type ProjectStatus = "Live Website" | "Website Preview" | "Featured" | "Case Study" | "Prototype" | "Code Sample";
+export type ProjectStatus = "Live Demo" | "Live Website" | "Website Preview" | "Featured" | "Case Study" | "Prototype" | "Code Sample";
 
 export type Project = {
   slug: string;
@@ -32,6 +32,139 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    slug: "grapevyne",
+    name: "GrapeVyne",
+    subtitle: "Live Wine Discovery & Personal Cellar Demo",
+    role: "Full-Stack Engineer",
+    status: "Live Demo",
+    image: "/projects/grapevyne-live-demo.jpg",
+    imageAlt: "Live GrapeVyne demo with a saved bottle and persisted test notes",
+    caseStudyImage: "/projects/grapevyne-live-demo.jpg",
+    caseStudyImageAlt:
+      "The public GrapeVyne cellar after a reload, showing synthetic notes saved to a test account",
+    caseStudyImageWidth: 1496,
+    caseStudyImageHeight: 761,
+    imageCaption: "Actual public demo after reload using a disposable test account. Wine discovery, prices, and catalog ratings are illustrative sample data.",
+    description:
+      "Deployed a React/Vite and Flask/PostgreSQL demo with signup, login, and persistent account-owned cellar CRUD. Wine discovery uses a clearly labeled sample catalog; saved bottles, ratings, notes, occasions, and favorites use the real API and database.",
+    tech: [
+      "React",
+      "JavaScript",
+      "Vite",
+      "React Router",
+      "Python",
+      "Flask",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "REST APIs",
+      "Session Authentication",
+    ],
+    highlights: [
+      "Implemented signup, login, logout, session restore, and protected cellar/profile routes with a Flask API.",
+      "Built cellar CRUD for saved bottles, tasting notes, ratings, occasions, and favorites; server queries filter entries by the authenticated user's ID.",
+      "Connected the visual cellar to real API records and awaited server-confirmed updates; discovery uses illustrative sample wine data.",
+    ],
+    roleFit: [
+      "Data-heavy product UI",
+      "Reusable state patterns",
+      "Structured content workflows",
+    ],
+    caseStudyAngle:
+      "Full-stack MVP, session authentication, relational data modeling, user-owned records, and a mock-data service boundary.",
+    problem:
+      "Wine discovery can become scattered across saved lists, tasting notes, favorites, and content feeds unless the product centers structured user-owned records.",
+    architecture: [
+      "React/Vite and React Router provide discovery, wine detail, login, profile, and cellar interfaces; same-origin API routes reach the Flask service on Vercel.",
+      "Flask routes use signed Secure HTTP-only session cookies and pass the current user's ID to cellar services.",
+      "SQLAlchemy models relate users, wines, and cellar entries in an isolated demo schema in Neon PostgreSQL; WineService searches sample catalog data.",
+    ],
+    decisions: [
+      "Separated wine discovery behind a backend WineService so the mock provider can be replaced without changing the frontend contract.",
+      "Kept cellar entry ownership checks in server-side queries.",
+      "Used related User, Wine, and CellarEntry records for saved bottle and tasting workflows.",
+    ],
+    quality: [
+      "Includes validation responses, loading/error/empty states, and feedback for key user actions.",
+      "Cellar routes require authentication and query records with the current user's ID.",
+      "The public browser walkthrough verified signup, save, edit, reload/login persistence, and delete; API checks confirmed cross-account reads and mutations are rejected.",
+    ],
+    improvements: [
+      "Connect a real wine data provider through WineService.",
+      "Add advanced cellar filtering, sorting, and inventory quantities.",
+      "Extend the existing authentication, CRUD, validation, and ownership regression checks with browser coverage.",
+    ],
+    links: {
+      github: "https://github.com/JPrevilon/GRAPEVYNE",
+      demo: "https://grapevyne-ten.vercel.app/",
+    },
+  },
+  {
+    slug: "pulse",
+    name: "PULSE",
+    subtitle: "City-Based Venue-Streaming Application",
+    role: "Front-End Engineer — Pulse Interactive",
+    status: "Case Study",
+    image: "/screenshots/pulse.png",
+    imageAlt: "Pulse real-time streaming platform dashboard and architecture visual",
+    caseStudyImage: "/screenshots/pulse.png",
+    caseStudyImageAlt:
+      "Pulse case study visual showing real-time venue streaming, engagement dashboards, and architecture notes",
+    caseStudyImageWidth: 1440,
+    caseStudyImageHeight: 900,
+    description:
+      "My work at Pulse Interactive includes PULSE, a city-based venue-streaming application with a Next.js/React interface, TypeScript, Node.js/Express APIs, and PostgreSQL.",
+    tech: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "REST APIs",
+      "JWT Authentication",
+      "Socket.IO",
+      "Amazon IVS",
+      "GitHub",
+    ],
+    highlights: [
+      "Built React/TypeScript city-discovery screens with API-fed venue cards, upcoming streams, and refreshed venue rankings.",
+      "Connected venue watch pages to Amazon IVS playback and Socket.IO events for chat, reactions, and live viewer counts.",
+      "Built Node.js/Express APIs with PostgreSQL models and JWT-protected routes.",
+    ],
+    roleFit: [
+      "React and TypeScript interfaces",
+      "Node.js and Express APIs",
+      "Authenticated application workflows",
+    ],
+    caseStudyAngle:
+      "Connecting city and venue interfaces, authenticated APIs, PostgreSQL data, and Socket.IO updates in one application.",
+    problem:
+      "A venue-streaming application needs connected city and venue views, authenticated actions, and activity updates across its interface and API.",
+    architecture: [
+      "Next.js, React, and TypeScript provide the city, venue, and activity interfaces.",
+      "Node.js and Express APIs connect application actions to PostgreSQL-backed data.",
+      "JWT-protected API routes and Socket.IO updates support authenticated venue-streaming and activity workflows.",
+    ],
+    decisions: [
+      "Kept application interfaces and API routes connected through structured responses.",
+      "Used authenticated routes for protected application actions.",
+      "Used Socket.IO for updates alongside request-based API workflows.",
+    ],
+    quality: [
+      "The repository contains the React/TypeScript interface, Express APIs, and PostgreSQL-backed application code.",
+      "Protected API routes use JWT authentication; activity updates use Socket.IO.",
+      "This case study describes implemented code without claiming production users, successful payments, or ticketing integrations.",
+    ],
+    improvements: [
+      "Verify deployment configuration and venue-streaming workflows before presenting the application as a live service.",
+      "Add automated coverage for authentication, API responses, and activity updates.",
+      "Complete and verify any external payment or ticketing integration before describing it as operational.",
+    ],
+    links: {
+      github: "https://github.com/JPrevilon/PULSE",
+    },
+  },
   {
     slug: "aeterna",
     name: "Aeterna Spa",
@@ -192,136 +325,6 @@ export const projects: Project[] = [
     ],
     links: {
       demo: "https://marktheshark-preview.vercel.app/",
-    },
-  },
-  {
-    slug: "pulse",
-    name: "PULSE",
-    subtitle: "City-Based Venue-Streaming Application",
-    role: "Front-End Engineer — Pulse Interactive",
-    status: "Featured",
-    image: "/screenshots/pulse.png",
-    imageAlt: "Pulse real-time streaming platform dashboard and architecture visual",
-    caseStudyImage: "/screenshots/pulse.png",
-    caseStudyImageAlt:
-      "Pulse case study visual showing real-time venue streaming, engagement dashboards, and architecture notes",
-    caseStudyImageWidth: 1440,
-    caseStudyImageHeight: 900,
-    description:
-      "My work at Pulse Interactive includes PULSE, a city-based venue-streaming application with a Next.js/React interface, TypeScript, Node.js/Express APIs, and PostgreSQL.",
-    tech: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Node.js",
-      "Express",
-      "PostgreSQL",
-      "REST APIs",
-      "JWT Authentication",
-      "Socket.IO",
-      "GitHub",
-    ],
-    highlights: [
-      "Built a city-based venue-streaming application with Next.js, React, TypeScript, Node.js/Express APIs, and PostgreSQL.",
-      "Implemented JWT-protected API routes and Socket.IO updates for venue-streaming and activity workflows.",
-      "Connected venue and activity interfaces to API responses and PostgreSQL-backed data.",
-    ],
-    roleFit: [
-      "React and TypeScript interfaces",
-      "Node.js and Express APIs",
-      "Authenticated application workflows",
-    ],
-    caseStudyAngle:
-      "Connecting city and venue interfaces, authenticated APIs, PostgreSQL data, and Socket.IO updates in one application.",
-    problem:
-      "A venue-streaming application needs connected city and venue views, authenticated actions, and activity updates across its interface and API.",
-    architecture: [
-      "Next.js, React, and TypeScript provide the city, venue, and activity interfaces.",
-      "Node.js and Express APIs connect application actions to PostgreSQL-backed data.",
-      "JWT-protected API routes and Socket.IO updates support authenticated venue-streaming and activity workflows.",
-    ],
-    decisions: [
-      "Kept application interfaces and API routes connected through structured responses.",
-      "Used authenticated routes for protected application actions.",
-      "Used Socket.IO for updates alongside request-based API workflows.",
-    ],
-    quality: [
-      "The repository contains the React/TypeScript interface, Express APIs, and PostgreSQL-backed application code.",
-      "Protected API routes use JWT authentication; activity updates use Socket.IO.",
-      "This case study describes implemented code without claiming production users, successful payments, or ticketing integrations.",
-    ],
-    improvements: [
-      "Verify deployment configuration and venue-streaming workflows before presenting the application as a live service.",
-      "Add automated coverage for authentication, API responses, and activity updates.",
-      "Complete and verify any external payment or ticketing integration before describing it as operational.",
-    ],
-    links: {
-      github: "https://github.com/JPrevilon/PULSE",
-    },
-  },
-  {
-    slug: "grapevyne",
-    name: "GrapeVyne",
-    subtitle: "Data-Heavy Wine Discovery & Personal Cellar Platform",
-    role: "Full-Stack Engineer",
-    status: "Case Study",
-    image: "/screenshots/grapevyne.png",
-    imageAlt: "GrapeVyne case study visual showing wine discovery and cellar workflows",
-    caseStudyImage: "/screenshots/grapevyne.png",
-    caseStudyImageAlt:
-      "GrapeVyne case study visual showing protected cellar workflows, architecture notes, and engineering contributions",
-    caseStudyImageWidth: 1920,
-    caseStudyImageHeight: 1080,
-    description:
-      "Built a wine discovery and personal cellar MVP with React, Flask, PostgreSQL, session authentication, and user-owned cellar records. Wine discovery currently uses local mock data behind a replaceable WineService abstraction.",
-    tech: [
-      "React",
-      "JavaScript",
-      "Vite",
-      "React Router",
-      "Python",
-      "Flask",
-      "PostgreSQL",
-      "SQLAlchemy",
-      "REST APIs",
-      "Session Authentication",
-    ],
-    highlights: [
-      "Implemented signup, login, logout, session restore, and protected cellar/profile routes with a Flask API.",
-      "Built cellar CRUD for saved bottles, tasting notes, ratings, occasions, and favorites; server queries filter entries by the authenticated user's ID.",
-      "Built React discovery/detail views and Open Cellar shelves, with a mock-data wine service that can later connect to an external provider.",
-    ],
-    roleFit: [
-      "Data-heavy product UI",
-      "Reusable state patterns",
-      "Structured content workflows",
-    ],
-    caseStudyAngle:
-      "Full-stack MVP, session authentication, relational data modeling, user-owned records, and a mock-data service boundary.",
-    problem:
-      "Wine discovery can become scattered across saved lists, tasting notes, favorites, and content feeds unless the product centers structured user-owned records.",
-    architecture: [
-      "React/Vite and React Router provide discovery, wine detail, login, profile, and cellar interfaces.",
-      "Flask routes use signed HTTP-only session cookies and pass the current user's ID to cellar services.",
-      "SQLAlchemy models relate users, wines, and cellar entries in PostgreSQL; WineService currently searches local mock wine data.",
-    ],
-    decisions: [
-      "Separated wine discovery behind a backend WineService so the mock provider can be replaced without changing the frontend contract.",
-      "Kept cellar entry ownership checks in server-side queries.",
-      "Used related User, Wine, and CellarEntry records for saved bottle and tasting workflows.",
-    ],
-    quality: [
-      "Includes validation responses, loading/error/empty states, and feedback for key user actions.",
-      "Cellar routes require authentication and query records with the current user's ID.",
-      "This case study documents the MVP implementation with public source and a mock wine data provider.",
-    ],
-    improvements: [
-      "Connect a real wine data provider through WineService.",
-      "Add advanced cellar filtering, sorting, and inventory quantities.",
-      "Expand automated coverage of authenticated CRUD and ownership checks.",
-    ],
-    links: {
-      github: "https://github.com/JPrevilon/GRAPEVYNE",
     },
   },
   {
