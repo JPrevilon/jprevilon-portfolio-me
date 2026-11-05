@@ -8,9 +8,18 @@ export type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
-    title: "Founding Full-Stack Engineer",
-    company: "Pulse Interactive",
-    dates: "2025 - Present",
+    title: "Founder / Software Engineer — Self-employed",
+    company: "Duorya",
+    dates: "Aug 2026 - Present",
+    bullets: [
+      "Build websites and software through a self-employed practice, including client storefront work for Perfume Plug USA.",
+      "Work across interface development, API integration, troubleshooting, and deployment workflows.",
+    ],
+  },
+  {
+    title: "Founder / Full-Stack Engineer",
+    company: "PULSE — Independent Venture",
+    dates: "2025 - 2026",
     location: "Remote",
     bullets: [
       "Built and led development of PULSE, a real-time streaming and business engagement platform focused on live activity data, dynamic rankings, creator/venue workflows, monetized boosts, dashboards, and operational tools.",
@@ -21,17 +30,15 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    title: "Web Software Engineer",
-    company: "White Sapphire",
-    dates: "2023 - 2025",
+    title: "Founder / Web Software Engineer",
+    company: "White Sapphire — Self-owned Independent Venture",
+    dates: "2024 - 2025",
     location: "Remote",
     bullets: [
       "Developed customer-facing and operational web applications using React, TypeScript, JavaScript, Node.js, Express, REST APIs, SQL-backed workflows, and cloud-hosted deployment patterns.",
       "Built React/TypeScript UI for data-heavy workflows including dashboards, reporting views, filtering, status states, forms, and operational product interfaces.",
       "Integrated frontend applications with Node.js/Express APIs, SQL-backed data models, REST services, JSON contracts, authentication flows, and backend service boundaries.",
-      "Improved system performance by 35% through backend optimization, SQL/query refinement, frontend performance tuning, debugging, and cleaner service boundaries across data-heavy paths.",
-      "Reduced production defects by 25% by expanding unit, integration, regression, and automated test coverage with Jest, React Testing Library, and Cypress.",
-      "Participated in pull requests, code reviews, release validation, defect triage, documentation, and engineering collaboration with product, QA, and backend stakeholders.",
+      "Worked on debugging, query refinement, frontend performance, and test coverage while developing the venture's applications.",
     ],
   },
   {
@@ -46,16 +53,19 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    title: "Technical Production Engineer / Audio Engineer",
-    company: "Sony Music, Republic Records, QUAD Studio, Platinum Sound",
-    dates: "2015 - 2022",
-    location: "New York, NY",
+    title: "Music Producer — Production Deal",
+    company: "Sony",
+    dates: "2019 - 2024",
     bullets: [
-      "Supported commercial music and media production workflows in fast-paced, client-facing environments where technical reliability, signal flow, asset management, and production quality directly impacted final deliverables.",
-      "Troubleshot audio, session, equipment, routing, and digital production workflow issues under deadline pressure.",
-      "Coordinated with artists, producers, engineers, and creative stakeholders to keep production systems reliable and sessions moving.",
-      "Managed media assets, technical handoffs, file/session organization, quality control, and repeatable production processes.",
-      "Built strong habits around operational excellence, clear communication, incident-style troubleshooting, and calm debugging under pressure.",
+      "Worked in music production under a production deal with Sony.",
+    ],
+  },
+  {
+    title: "Audio Engineering Intern",
+    company: "Republic Records",
+    dates: "2016 - 2019",
+    bullets: [
+      "Gained audio engineering and music production experience through an internship.",
     ],
   },
 ];

@@ -368,10 +368,10 @@ export default function Home() {
           <Reveal>
             <SectionHeading
               id="certifications-title"
-              eyebrow="Certifications"
-              title="Verified credentials and continued learning."
+              eyebrow="Education & Learning"
+              title="Software training, audio studies, and continued learning."
             >
-              Formal software training, business education, security
+              Formal software training, audio studies, security
               fundamentals, and modern AI workflow learning.
             </SectionHeading>
           </Reveal>

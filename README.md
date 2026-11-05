@@ -66,8 +66,9 @@ The resume download points to:
 public/Joshua_Previlon_Resume.pdf
 ```
 
-Replace that placeholder PDF with the latest resume before publishing. Keep the
-same filename unless you also update `profile.resumePath` in `src/data/profile.ts`.
+The published file is the factual resume updated November 5, 2026. Keep the
+same filename for future updates unless you also update `profile.resumePath`
+in `src/data/profile.ts`.
 
 ## Brand Assets
 

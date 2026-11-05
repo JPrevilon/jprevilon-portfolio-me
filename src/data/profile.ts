@@ -76,7 +76,7 @@ export const recruiterSnapshot = [
 ] as const;
 
 export const mediaEdgeIntro =
-  "Before software engineering, I worked in technical production and audio engineering environments with Sony Music, Republic Records, QUAD Studio, and Platinum Sound. That background shaped how I approach engineering: trace the signal, understand the system, debug calmly, document the workflow, and protect the final user experience.";
+  "My music background includes an internship at Republic Records (2016–2019) and a production deal with Sony (2019–2024). That experience shaped how I approach engineering: trace the signal, understand the system, debug calmly, document the workflow, and protect the final user experience.";
 
 export const mediaEdgeCards = [
   {
@@ -103,16 +103,16 @@ export const mediaEdgeCards = [
 
 export const certifications = [
   {
-    title: "Certificate, Full-Stack Web Development",
+    title: "Software Engineering Certificate",
     issuer: "Flatiron School",
     description:
-      "Formal full-stack software engineering program covering frontend, backend, databases, and applied product development.",
+      "Completed May 2026. Full-stack software engineering training covering frontend, backend, databases, and applied product development.",
   },
   {
-    title: "Bachelor of Business Administration",
-    issuer: "St. John's University",
+    title: "Audio Studies, 2014–2016",
+    issuer: "Nassau Community College",
     description:
-      "Business foundation that supports product judgment, stakeholder communication, and practical delivery thinking.",
+      "Audio studies that contributed to a background in music and technical production.",
   },
   {
     title: "Foundations of Cybersecurity",

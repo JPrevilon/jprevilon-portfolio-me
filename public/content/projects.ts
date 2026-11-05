@@ -18,7 +18,7 @@ export const projects: Project[] = [
     slug: "pulse",
     name: "Pulse",
     subtitle: "Real-Time Streaming & Operational Dashboard Platform",
-    role: "Founding Full-Stack Engineer",
+    role: "Founder / Full-Stack Engineer — Independent Venture",
     status: "Featured",
     image: "/projects/pulse_thumb.png",
     description:
