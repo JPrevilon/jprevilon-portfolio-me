@@ -1,4 +1,4 @@
-export type ProjectStatus = "Live Website" | "Featured" | "Case Study" | "Prototype" | "Code Sample";
+export type ProjectStatus = "Live Website" | "Website Preview" | "Featured" | "Case Study" | "Prototype" | "Code Sample";
 
 export type Project = {
   slug: string;
@@ -91,6 +91,106 @@ export const projects: Project[] = [
     links: {
       github: "https://github.com/JPrevilon/aeterna",
       demo: "https://www.aeternaspa.com/",
+    },
+  },
+  {
+    slug: "deer-creek-golf-club",
+    name: "Deer Creek Golf Club",
+    subtitle: "Published Golf Club Website Preview",
+    role: "Website Developer",
+    status: "Website Preview",
+    image: "/projects/deer-creek-preview.webp",
+    imageAlt: "Deer Creek website preview showing its course, clubhouse, and navigation",
+    caseStudyImage: "/projects/deer-creek-preview.webp",
+    caseStudyImageAlt: "Published Deer Creek Golf Club preview image from Duorya",
+    caseStudyImageWidth: 1600,
+    caseStudyImageHeight: 900,
+    imageCaption: "Exact project preview image published by Duorya. Open the website preview to explore the course and clubhouse experience.",
+    description:
+      "Built a published golf club website preview with HTML, CSS, JavaScript, and a Vite multi-page build. It combines course and clubhouse content with a scroll-driven canvas hero, cinematic page transitions, and responsive navigation.",
+    tech: ["HTML", "CSS", "JavaScript", "Vite", "Canvas", "Video Interactions", "Responsive Design"],
+    highlights: [
+      "Built a static multi-page site covering the course, clubhouse, driving range, dining, events, and membership information.",
+      "Implemented an image-sequence hero and video/canvas transitions between key destinations, with ordinary navigation fallbacks.",
+      "Adapted media loading and navigation for mobile and reduced-motion preferences.",
+    ],
+    roleFit: ["Multi-page architecture", "Media-rich navigation", "Responsive frontend"],
+    caseStudyAngle:
+      "Published website preview demonstrating static site architecture, design implementation, and media interactions.",
+    problem:
+      "Bring a golf club's facilities and information into a coherent web experience while keeping navigation usable across desktop and mobile.",
+    architecture: [
+      "Build-time templates assemble individual HTML pages, shared navigation, route data, and styles before Vite produces static files.",
+      "Page-specific JavaScript controls the canvas hero, cinematic transitions, flyover viewers, and interactive sections.",
+      "The preview is mounted under Duorya's /deercreek/ path. Forms currently demonstrate local state rather than a connected delivery backend.",
+    ],
+    decisions: [
+      "Used real static page routes with lightweight JavaScript instead of a frontend framework runtime.",
+      "Separated shared navigation and transition behavior from page-specific interactions.",
+      "Provided direct navigation when media playback fails or motion is reduced.",
+    ],
+    quality: [
+      "Mobile navigation avoids loading the heavier cinematic transition assets.",
+      "Canvas frame loading uses a coarse first pass before loading finer frames.",
+      "Duorya presents this work as a website preview.",
+    ],
+    improvements: [
+      "Connect and validate form delivery when a backend is configured.",
+      "Continue measuring image and video loading across target devices.",
+      "Expand automated checks for navigation and fallback behavior.",
+    ],
+    links: {
+      demo: "https://www.duorya.com/deercreek/",
+    },
+  },
+  {
+    slug: "mark-the-shark",
+    name: "Mark the Shark",
+    subtitle: "Fishing Charter Website Preview",
+    role: "Website Developer",
+    status: "Website Preview",
+    image: "/projects/mark-the-shark-preview.webp",
+    imageAlt: "Visible hero frame served by the Mark the Shark website preview",
+    caseStudyImage: "/projects/mark-the-shark-preview.webp",
+    caseStudyImageAlt: "Mark the Shark fishing charter preview hero image",
+    caseStudyImageWidth: 1920,
+    caseStudyImageHeight: 1080,
+    imageCaption: "Exact hero image served by the public website preview. Open the preview for the scroll-driven sequence and charter interface.",
+    description:
+      "Built a fishing charter website preview with Next.js, React, TypeScript, and Tailwind CSS. The frontend includes an immersive scroll-driven hero, charter content, responsive navigation, a filtered gallery, and a booking-request interface.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Canvas", "Zod", "Responsive Design"],
+    highlights: [
+      "Implemented a canvas hero with frame preloading, desktop/mobile media choices, and reduced-motion or no-JavaScript still fallbacks.",
+      "Built charter content pages, responsive navigation, and a category-filtered gallery with a keyboard-operable lightbox.",
+      "Built a booking-request interface with input validation and separate request/payment configuration.",
+    ],
+    roleFit: ["Interactive frontend", "Media loading", "Validated request workflows"],
+    caseStudyAngle:
+      "Public website preview combining media interaction, content architecture, responsive UI, and request-form implementation.",
+    problem:
+      "Present a fishing charter brand through an immersive web experience with clear routes to charter information, galleries, and booking requests.",
+    architecture: [
+      "Next.js App Router organizes the website's charter, gallery, brand, contact, and booking pages.",
+      "React and TypeScript coordinate canvas frame loading, gallery state, and responsive navigation components.",
+      "The booking-request workflow uses Zod validation; payment and delivery integrations have separate launch configuration.",
+    ],
+    decisions: [
+      "Prioritized hero frame loading and decode-ahead behavior for the scroll sequence.",
+      "Provided still-image alternatives for reduced motion and no-JavaScript contexts.",
+      "Kept preview request mode separate from live payment configuration.",
+    ],
+    quality: [
+      "The gallery includes keyboard interaction and a lightbox viewer.",
+      "Navigation and hero media adapt to desktop and mobile layouts.",
+      "The deployment is published as a website preview, with production configuration tracked separately.",
+    ],
+    improvements: [
+      "Complete the launch checklist before enabling any production payment flow.",
+      "Validate configured request delivery and booking behavior end to end.",
+      "Extend automated coverage of media fallbacks and interactive gallery states.",
+    ],
+    links: {
+      demo: "https://marktheshark-preview.vercel.app/",
     },
   },
   {

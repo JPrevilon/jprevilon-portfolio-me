@@ -36,14 +36,7 @@ export async function generateMetadata({
     };
   }
 
-  const pageKind =
-    project.status === "Live Website"
-      ? "Live Website"
-      : project.status === "Prototype"
-      ? "Prototype"
-      : project.status === "Code Sample"
-        ? "Code Sample"
-        : "Case Study";
+  const pageKind = project.status === "Featured" ? "Case Study" : project.status;
   const pageTitle = `${project.name} ${pageKind}`;
   const projectPath = `/projects/${project.slug}`;
   const previewImage = {
@@ -135,7 +128,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                     icon={<ExternalLink size={18} aria-hidden="true" />}
                     className="w-full sm:w-auto"
                   >
-                    {project.status === "Live Website" ? "Live Website" : "Live Demo"}
+                    {project.status === "Live Website" ? "Live Website" : project.status === "Website Preview" ? "View Preview" : "Live Demo"}
                   </ButtonLink>
                 ) : null}
                 <ButtonLink
@@ -214,7 +207,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                       className="inline-flex items-center gap-2 text-zinc-300 transition hover:text-white"
                     >
                       <ExternalLink size={16} aria-hidden="true" />
-                      {project.status === "Live Website" ? "Live website" : "Live demo"}
+                      {project.status === "Live Website" ? "Live website" : project.status === "Website Preview" ? "View preview" : "Live demo"}
                     </a>
                   ) : null}
                   {!project.links?.github && !project.links?.demo ? (
