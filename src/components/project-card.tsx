@@ -101,7 +101,7 @@ export function ProjectCard({ project, priority = false }: ProjectCardProps) {
             href={`/projects/${project.slug}`}
             className="inline-flex min-h-10 w-full items-center justify-center gap-2 rounded-lg border border-[#f2c879]/60 bg-[#f2c879]/10 px-3 py-2 text-center text-sm font-semibold text-[#f2c879] transition hover:border-[#ffe1a1] hover:bg-[#f2c879]/18 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#37d5ff] sm:w-auto"
           >
-            Case Study
+            {project.status === "Live Website" ? "Project Details" : "Case Study"}
             <ArrowRight size={16} aria-hidden="true" />
           </Link>
           {project.links?.github ? (
@@ -123,7 +123,7 @@ export function ProjectCard({ project, priority = false }: ProjectCardProps) {
               className="inline-flex min-h-10 w-full items-center justify-center gap-2 rounded-lg border border-white/15 bg-white/[0.04] px-3 py-2 text-center text-sm font-semibold text-zinc-200 transition hover:border-[#37d5ff]/70 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#37d5ff] sm:w-auto"
             >
               <ExternalLink size={16} aria-hidden="true" />
-              Live Demo
+              {project.status === "Live Website" ? "Live Website" : "Live Demo"}
             </a>
           ) : null}
         </div>

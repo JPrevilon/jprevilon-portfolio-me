@@ -174,7 +174,7 @@ export default function Home() {
             <SectionHeading
               id="projects-title"
               eyebrow="Featured Projects"
-              title="Case studies across frontend infrastructure, observability, real-time workflows, and media systems."
+              title="Live websites and case studies across interactive frontend experiences, dashboards, and real-time systems."
             >
               Selected work showing product ownership, structured data flow,
               dashboard UX, API integration, and operational thinking.

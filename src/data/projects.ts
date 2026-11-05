@@ -1,4 +1,4 @@
-export type ProjectStatus = "Featured" | "Case Study" | "Prototype" | "Code Sample";
+export type ProjectStatus = "Live Website" | "Featured" | "Case Study" | "Prototype" | "Code Sample";
 
 export type Project = {
   slug: string;
@@ -18,6 +18,7 @@ export type Project = {
   caseStudyImageWidth: number;
   caseStudyImageHeight: number;
   visualNote?: string;
+  imageCaption?: string;
   problem: string;
   architecture: string[];
   decisions: string[];
@@ -30,6 +31,68 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    slug: "aeterna",
+    name: "Aeterna Spa",
+    subtitle: "Live Wellness Website & Interactive Brand Experience",
+    role: "Website Developer",
+    status: "Live Website",
+    image: "/projects/aeterna-live.jpg",
+    imageAlt: "Reception imagery served by the live Aeterna Spa website",
+    caseStudyImage: "/projects/aeterna-live.jpg",
+    caseStudyImageAlt: "Aeterna Spa website imagery with warm interiors and green brand accents",
+    caseStudyImageWidth: 1376,
+    caseStudyImageHeight: 768,
+    imageCaption: "Image served by the live Aeterna Spa website. Open the live website to explore the video tour and interactive interface.",
+    description:
+      "Built the live Aeterna Spa website with HTML, CSS, and JavaScript: a scroll-driven video tour, treatment discovery, interactive comparison sliders, and a consultation enquiry interface.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Responsive Design",
+      "Video Interactions",
+      "Accessibility",
+    ],
+    highlights: [
+      "Built a scroll-scrubbed tour across six video clips, with sequential media prefetching and synchronized chapter navigation.",
+      "Implemented treatment category tabs, responsive navigation, comparison sliders, and reduced-motion alternatives.",
+      "Built contact and newsletter form interfaces with validation and phone/email fallback paths.",
+    ],
+    roleFit: [
+      "Live website delivery",
+      "Interactive frontend",
+      "Responsive brand experience",
+    ],
+    caseStudyAngle:
+      "A published website combining media interaction, service discovery, accessible controls, and consultation paths.",
+    problem:
+      "Present a wellness brand and its service information through an engaging website with clear navigation and a direct path to make an enquiry.",
+    architecture: [
+      "Semantic HTML contains the page sections and treatment menu; CSS provides the responsive visual system.",
+      "Vanilla JavaScript coordinates video scrubbing, treatment tabs, navigation, carousel states, and comparison sliders.",
+      "Consultation calls to action lead to the contact section. Forms validate input and provide phone/email fallback messages when an endpoint is unavailable.",
+    ],
+    decisions: [
+      "Kept the deployed frontend as static HTML, CSS, and JavaScript with no build dependencies.",
+      "Prefetched tour clips sequentially and tied chapter navigation to shared scroll progress.",
+      "Used keyboard-operable controls and reduced-motion alternatives for interactive sections.",
+    ],
+    quality: [
+      "Includes keyboard navigation for treatment tabs, a no-script preloader fallback, and reduced-motion handling.",
+      "The live HTML, stylesheet, and JavaScript match the public repository's aeterna-2-site implementation.",
+      "The current website presents consultation and enquiry paths; booking and payment processing are separate integration work.",
+    ],
+    improvements: [
+      "Extend automated coverage of navigation, media loading, and form states.",
+      "Validate any future booking-provider or enquiry-backend handoff end to end.",
+      "Continue monitoring media-loading performance across mobile devices.",
+    ],
+    links: {
+      github: "https://github.com/JPrevilon/aeterna",
+      demo: "https://www.aeternaspa.com/",
+    },
+  },
   {
     slug: "pulse",
     name: "Pulse",

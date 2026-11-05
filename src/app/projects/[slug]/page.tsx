@@ -37,7 +37,9 @@ export async function generateMetadata({
   }
 
   const pageKind =
-    project.status === "Prototype"
+    project.status === "Live Website"
+      ? "Live Website"
+      : project.status === "Prototype"
       ? "Prototype"
       : project.status === "Code Sample"
         ? "Code Sample"
@@ -133,7 +135,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                     icon={<ExternalLink size={18} aria-hidden="true" />}
                     className="w-full sm:w-auto"
                   >
-                    Live Demo
+                    {project.status === "Live Website" ? "Live Website" : "Live Demo"}
                   </ButtonLink>
                 ) : null}
                 <ButtonLink
@@ -212,7 +214,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                       className="inline-flex items-center gap-2 text-zinc-300 transition hover:text-white"
                     >
                       <ExternalLink size={16} aria-hidden="true" />
-                      Live demo
+                      {project.status === "Live Website" ? "Live website" : "Live demo"}
                     </a>
                   ) : null}
                   {!project.links?.github && !project.links?.demo ? (
@@ -264,7 +266,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <List items={project.quality} />
             </CaseStudySection>
 
-            <CaseStudySection title={project.visualNote ? "Concept Visual" : "Screenshots"}>
+            <CaseStudySection title={project.visualNote ? "Concept Visual" : project.imageCaption ? "Website Imagery" : "Screenshots"}>
               <figure className="overflow-hidden rounded-lg border border-white/10 bg-[#0b0b0b]">
                 <Image
                   src={project.caseStudyImage}
@@ -274,7 +276,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   className="h-auto w-full object-cover"
                 />
                 <figcaption className="border-t border-white/10 px-4 py-3 text-sm text-zinc-400">
-                  {project.visualNote ?? `${project.name} visual reference.`}
+                  {project.visualNote ?? project.imageCaption ?? `${project.name} visual reference.`}
                 </figcaption>
               </figure>
             </CaseStudySection>

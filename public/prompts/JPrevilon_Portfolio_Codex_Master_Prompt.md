@@ -123,11 +123,12 @@ Real-time engagement platforms, streaming-adjacent workflows, content discovery,
 
 ## Featured projects
 Use this order:
-1. Pulse — Real-Time Streaming & Operational Dashboard Platform
-2. GrapeVyne — Data-Heavy Wine Discovery & Personal Cellar Platform
-3. Martha — React Native / Expo Daily Assistant Prototype
-4. Ultara — TV Discovery & Media Data Application
-5. Media Observability Dashboard — React, TypeScript & GraphQL Infrastructure UI Prototype
+1. Aeterna Spa — Live HTML/CSS/JavaScript Wellness Website
+2. Pulse — Real-Time Streaming & Operational Dashboard Platform
+3. GrapeVyne — Data-Heavy Wine Discovery & Personal Cellar Platform
+4. Martha — React Native / Expo Daily Assistant Prototype
+5. Ultara — TV Discovery & Media Data Application
+6. Media Observability Dashboard — React, TypeScript & GraphQL Infrastructure UI Prototype
 
 Use project data from `/src/data/projects.ts`. If the file does not exist, create it using the content from the attached `content/projects.ts` file.
 
@@ -145,6 +146,7 @@ Each project card should include:
 If live demos are missing, do not invent them. Hide the button.
 
 Keep source-backed project details and status accurate:
+- Aeterna Spa: live website at https://www.aeternaspa.com/, role Website Developer, source https://github.com/JPrevilon/aeterna. The deployed aeterna-2-site implementation uses HTML/CSS/vanilla JavaScript for its video tour, treatment tabs, comparison sliders, and enquiry interface. Other Next.js/backend code in the repository is a separate implementation; no live checkout, booking-provider, dates, client relationship, or impact metrics are inferred.
 - PULSE: independent venture, 2025–2026; implemented integrations, without claims of verified live production use.
 - GrapeVyne: React/Vite, Python/Flask, SQLAlchemy/PostgreSQL, signed session cookies, and user-owned cellar CRUD. WineService currently uses mock data; external wine provider integration is future work.
 - Martha: early React Native/Expo/TypeScript prototype with speech and device links. Weather and medication data are static samples; AI and automated reminders are future work.
