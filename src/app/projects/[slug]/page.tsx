@@ -36,20 +36,41 @@ export async function generateMetadata({
     };
   }
 
+  const pageKind =
+    project.status === "Prototype"
+      ? "Prototype"
+      : project.status === "Code Sample"
+        ? "Code Sample"
+        : "Case Study";
+  const pageTitle = `${project.name} ${pageKind}`;
+  const projectPath = `/projects/${project.slug}`;
+  const previewImage = {
+    url: project.caseStudyImage,
+    width: project.caseStudyImageWidth,
+    height: project.caseStudyImageHeight,
+    alt: project.caseStudyImageAlt,
+  };
+
   return {
-    title: `${project.name} Case Study`,
+    title: pageTitle,
     description: project.description,
+    alternates: {
+      canonical: projectPath,
+    },
     openGraph: {
-      title: `${project.name} | ${project.subtitle}`,
+      title: `${pageTitle} | Joshua Previlon`,
       description: project.description,
-      images: [
-        {
-          url: project.image,
-          width: 1280,
-          height: 720,
-          alt: project.imageAlt,
-        },
-      ],
+      url: projectPath,
+      siteName: "Joshua Previlon Portfolio",
+      locale: "en_US",
+      type: "website",
+      images: [previewImage],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${pageTitle} | Joshua Previlon`,
+      description: project.description,
+      images: [previewImage],
     },
   };
 }
