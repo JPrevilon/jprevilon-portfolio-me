@@ -1,7 +1,7 @@
 export const stackGroups = [
   {
-    title: "Frontend",
-    items: [
+    "title": "Frontend",
+    "items": [
       "React",
       "TypeScript",
       "JavaScript",
@@ -9,94 +9,40 @@ export const stackGroups = [
       "HTML",
       "CSS",
       "Tailwind CSS",
-      "Component Systems",
-      "Frontend Architecture",
-      "Responsive Design",
-      "Accessibility",
-      "UI State Management",
-    ],
+      "Responsive Design"
+    ]
   },
   {
-    title: "Backend",
-    items: [
+    "title": "Backend & Data",
+    "items": [
       "Node.js",
       "Express",
-      "REST APIs",
+      "Python",
+      "Flask",
+      "SQLAlchemy",
       "PostgreSQL",
-      "SQL",
+      "REST APIs",
       "Authentication",
-      "API Contracts",
-      "JSON",
-      "CRUD Workflows",
-      "Service Boundaries",
-      "Backend Debugging",
-    ],
+      "Socket.IO"
+    ]
   },
   {
-    title: "Testing / Quality",
-    items: [
-      "Jest",
-      "React Testing Library",
-      "Cypress",
-      "Unit Tests",
-      "Integration Tests",
-      "Regression Tests",
-      "QA",
-      "Debugging",
-      "Code Reviews",
-      "Release Validation",
-    ],
-  },
-  {
-    title: "Cloud / DevOps",
-    items: [
-      "AWS concepts",
-      "Docker",
+    "title": "Tools",
+    "items": [
+      "Git",
       "GitHub",
-      "CI/CD practices",
-      "Environment Variables",
-      "Deployment Workflows",
-      "Vercel",
-      "Operational Readiness",
-    ],
-  },
-  {
-    title: "Product / Systems",
-    items: [
-      "Data-heavy UIs",
-      "Dashboards",
-      "Operational Tools",
-      "Developer Tools",
-      "Real-Time Systems",
-      "Observability UI",
-      "Logs / Metrics UX",
-      "Media Workflows",
-      "Asset Pipelines",
-      "Content Systems",
-    ],
-  },
-  {
-    title: "AI",
-    items: [
-      "AI-assisted development",
-      "LLM workflows",
-      "Prompt patterns",
-      "Claude Code",
-      "GitHub Copilot",
-      "API-based AI features",
-    ],
-  },
+      "Vite"
+    ]
+  }
 ] as const;
 
 export const strengths = [
-  "Frontend infrastructure for complex state",
-  "Observability-minded dashboard design",
-  "Developer-facing workflow tooling",
-  "Real-time UI and data-flow modeling",
-  "Media workflow and asset-pipeline fluency",
-  "Backend debugging from the frontend",
-  "API contract and service-boundary clarity",
-  "QA and regression-minded development",
-  "Clear technical communication under pressure",
-  "Fast ramp-up across new product domains",
+  "Responsive HTML/CSS and React interfaces",
+  "TypeScript and JavaScript application code",
+  "Next.js pages and components",
+  "REST APIs and relational data",
+  "Authentication and user-scoped CRUD",
+  "Media-driven interfaces and navigation fallbacks",
+  "Clear live, preview, and prototype status",
+  "Git and Vite project workflows"
 ] as const;

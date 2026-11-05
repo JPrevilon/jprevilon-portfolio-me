@@ -58,17 +58,19 @@ public/projects/observability_placeholder.png
 Update `image`, `caseStudyImage`, and alt text in `src/data/projects.ts` if you
 change filenames.
 
-## Replace Resume
+## Replace Résumés
 
-The resume download points to:
+The two résumé downloads point to:
 
 ```txt
-public/Joshua_Previlon_Resume.pdf
+public/Joshua_Previlon_Front_End_Resume.pdf
+public/Joshua_Previlon_Full_Stack_Resume.pdf
 ```
 
-The published file is the factual resume updated November 5, 2026. Keep the
-same filename for future updates unless you also update `profile.resumePath`
-in `src/data/profile.ts`.
+These are separate front-end and full-stack résumés created from confirmed
+facts on November 5, 2026. Keep `public/Joshua_Previlon_Resume.pdf` as an identical
+copy of the full-stack version so existing download links continue to work.
+The named download links are defined in `resumeDownloads` in `src/data/profile.ts`.
 
 ## Brand Assets
 

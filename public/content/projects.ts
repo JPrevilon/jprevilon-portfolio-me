@@ -24,6 +24,7 @@ export type Project = {
   decisions: string[];
   quality: string[];
   improvements: string[];
+  showInPortfolio?: boolean;
   links?: {
     github?: string;
     demo?: string;
@@ -195,9 +196,9 @@ export const projects: Project[] = [
   },
   {
     slug: "pulse",
-    name: "Pulse",
-    subtitle: "Real-Time Streaming & Operational Dashboard Platform",
-    role: "Founder & Developer — Independent Venture",
+    name: "PULSE",
+    subtitle: "City-Based Venue-Streaming Application",
+    role: "Founder & Full-Stack Developer — Pulse Interactive",
     status: "Featured",
     image: "/screenshots/pulse.png",
     imageAlt: "Pulse real-time streaming platform dashboard and architecture visual",
@@ -207,7 +208,7 @@ export const projects: Project[] = [
     caseStudyImageWidth: 1440,
     caseStudyImageHeight: 900,
     description:
-      "Built a real-time engagement platform with operator-facing dashboards for live activity data, dynamic rankings, creator/venue workflows, monetized boosts, and fast-changing platform state.",
+      "Built PULSE through my own venture, Pulse Interactive: a city-based venue-streaming application with a Next.js/React interface, TypeScript, Node.js/Express APIs, and PostgreSQL.",
     tech: [
       "React",
       "Next.js",
@@ -216,46 +217,43 @@ export const projects: Project[] = [
       "Express",
       "PostgreSQL",
       "REST APIs",
-      "Real-time UI",
-      "API Contracts",
-      "Docker",
+      "JWT Authentication",
+      "Socket.IO",
       "GitHub",
     ],
     highlights: [
-      "Built React/TypeScript dashboard surfaces for live activity streams, ranking changes, admin workflows, and user-facing platform states.",
-      "Integrated frontend workflows with Node.js/Express APIs, PostgreSQL-backed data models, authentication, engagement metrics, boost logic, and structured JSON contracts.",
-      "Designed reusable state patterns for loading, empty, error, and live-update views so operators could understand what changed and why.",
-      "Debugged frontend/backend data flow across APIs, state, service boundaries, and production-style workflow issues.",
-      "Improved developer velocity with reusable component patterns, clearer service boundaries, documentation, testing, and repeatable implementation notes.",
+      "Built a city-based venue-streaming application with Next.js, React, TypeScript, Node.js/Express APIs, and PostgreSQL.",
+      "Implemented JWT-protected API routes and Socket.IO updates for venue-streaming and activity workflows.",
+      "Connected venue and activity interfaces to API responses and PostgreSQL-backed data.",
     ],
     roleFit: [
-      "Real-time dashboard state",
-      "Operational tooling",
-      "API contract debugging",
+      "React and TypeScript interfaces",
+      "Node.js and Express APIs",
+      "Authenticated application workflows",
     ],
     caseStudyAngle:
-      "Real-time systems, operational dashboards, frontend infrastructure, and full-stack data flow.",
+      "Connecting city and venue interfaces, authenticated APIs, PostgreSQL data, and Socket.IO updates in one application.",
     problem:
-      "Real-time engagement products need to keep live activity, ranking logic, creator actions, venue operations, and monetized state changes understandable while product state is moving quickly.",
+      "A venue-streaming application needs connected city and venue views, authenticated actions, and activity updates across its interface and API.",
     architecture: [
-      "React and TypeScript UI states consume structured JSON contracts from Node.js and Express service boundaries.",
-      "PostgreSQL-backed models support users, venues, engagement events, boosts, rankings, and operational dashboard views.",
-      "Dashboard surfaces separate empty, loading, error, and live states so operators can read platform behavior quickly.",
+      "Next.js, React, and TypeScript provide the city, venue, and activity interfaces.",
+      "Node.js and Express APIs connect application actions to PostgreSQL-backed data.",
+      "JWT-protected API routes and Socket.IO updates support authenticated venue-streaming and activity workflows.",
     ],
     decisions: [
-      "Modeled reusable dashboard primitives before building feature-specific screens.",
-      "Kept API response shapes predictable so frontend state handling stayed debuggable.",
-      "Prioritized clear operational states over decorative UI in admin-heavy workflows.",
+      "Kept application interfaces and API routes connected through structured responses.",
+      "Used authenticated routes for protected application actions.",
+      "Used Socket.IO for updates alongside request-based API workflows.",
     ],
     quality: [
-      "Validated loading, empty, error, and live-update states across dashboard workflows.",
-      "Documented repeatable implementation patterns for components, service boundaries, and API contracts.",
-      "Used QA passes and debugging notes to track frontend/backend data-flow issues through release-style iteration.",
+      "The repository contains the React/TypeScript interface, Express APIs, and PostgreSQL-backed application code.",
+      "Protected API routes use JWT authentication; activity updates use Socket.IO.",
+      "This case study describes implemented code without claiming production users, successful payments, or ticketing integrations.",
     ],
     improvements: [
-      "Add richer observability around ranking updates, boost events, and operator actions.",
-      "Introduce deeper automated regression coverage for core dashboard workflows.",
-      "Expand analytics views for creator, venue, and platform-level trends.",
+      "Verify deployment configuration and venue-streaming workflows before presenting the application as a live service.",
+      "Add automated coverage for authentication, API responses, and activity updates.",
+      "Complete and verify any external payment or ticketing integration before describing it as operational.",
     ],
     links: {
       github: "https://github.com/JPrevilon/PULSE",
@@ -454,6 +452,7 @@ export const projects: Project[] = [
   },
   {
     slug: "media-observability-dashboard",
+    showInPortfolio: false,
     name: "Media Observability Dashboard",
     subtitle: "Frontend Infrastructure & GraphQL Observability UI Prototype",
     role: "Frontend Engineer",
@@ -513,6 +512,10 @@ export const projects: Project[] = [
     ],
   },
 ];
+
+export const portfolioProjects = projects.filter(
+  (project) => project.showInPortfolio !== false,
+);
 
 export function getProjectBySlug(slug: string) {
   return projects.find((project) => project.slug === slug);

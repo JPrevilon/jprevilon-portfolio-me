@@ -15,121 +15,99 @@ export const siteUrl =
 
 export const siteTitle = "Joshua Previlon | Software Engineer";
 
-export const siteDescription =
-  "Portfolio of Joshua Previlon, a software engineer building React/TypeScript product surfaces for dashboards, developer workflows, real-time systems, media-aware tools, and full-stack applications.";
+export const siteDescription = "Portfolio of Joshua Previlon: React and TypeScript interfaces, responsive websites, and full-stack applications with Node.js, Express, Flask, and PostgreSQL.";
 
 export const profile = {
-  name: "Joshua Previlon",
-  title: "Software Engineer",
-  secondaryTitle: "Full-Stack Engineer | React | TypeScript | Frontend Infrastructure",
-  location: "Miami, FL | Remote / NYC Hybrid Open",
-  email: "joshuaprevilon13@gmail.com",
-  linkedin: "https://www.linkedin.com/in/jprevilon/",
-  github: "https://github.com/JPrevilon",
-  resumePath: "/Joshua_Previlon_Resume.pdf",
-  positioning:
-    "I build full-stack product surfaces, frontend infrastructure, dashboards, and workflow tools that make complex systems easier to operate, debug, and scale.",
-  about:
-    "Software Engineer with experience across React, TypeScript, Next.js, Node.js, Express, PostgreSQL, REST APIs, testing, cloud-hosted workflows, technical content systems, and media production environments. I enjoy turning ambiguous product and operational requirements into clean, scalable interfaces that help teams understand what is happening in the system.",
-  headline:
-    "Building frontend infrastructure, dashboards, and real-time workflows for complex product systems.",
-  supportingCopy:
-    "I work across React, TypeScript, Node.js, APIs, PostgreSQL, testing, and cloud-hosted workflows to build operational dashboards, developer-facing tools, observability-style interfaces, AI-assisted workflows, and media-aware product experiences.",
-  contactCta:
-    "Have a role involving frontend infrastructure, observability UI, developer tools, real-time dashboards, media workflows, or full-stack product development? Let's talk.",
+  "name": "Joshua Previlon",
+  "title": "Software Engineer",
+  "secondaryTitle": "React, TypeScript & Next.js | Front-End & Full-Stack Applications",
+  "location": "Miami-Fort Lauderdale, FL",
+  "availability": "Seeking full-time front-end or full-stack engineering opportunities; open to remote opportunities.",
+  "email": "joshua@duorya.com",
+  "linkedin": "https://www.linkedin.com/in/jprevilon/",
+  "github": "https://github.com/JPrevilon",
+  "resumePath": "/Joshua_Previlon_Resume.pdf",
+  "positioning": "I build responsive websites, React and TypeScript interfaces, and full-stack applications with connected data.",
+  "about": "I am a software developer based in Miami–Fort Lauderdale. My work includes responsive business websites, React and TypeScript interfaces, and applications using Node.js/Express or Flask with PostgreSQL. Selected projects show their current live, preview, or application status.",
+  "headline": "Building responsive websites and front-end/full-stack applications.",
+  "supportingCopy": "My work spans published websites, cinematic website previews, a venue-streaming application, and a wine collection application. I use React, TypeScript, JavaScript, and connected APIs where the project calls for them.",
+  "focus": "React and TypeScript interfaces, responsive websites, Node.js/Express or Flask APIs, and PostgreSQL-backed applications.",
+  "contactCta": "Seeking full-time front-end or full-stack engineering opportunities; open to remote opportunities."
 } as const;
+
+export const resumeDownloads = [
+  {
+    "label": "Front-End Résumé",
+    "href": "/Joshua_Previlon_Front_End_Resume.pdf"
+  },
+  {
+    "label": "Full-Stack Résumé",
+    "href": "/Joshua_Previlon_Full_Stack_Resume.pdf"
+  }
+] as const;
 
 export const heroBadges = [
   "React",
   "TypeScript",
-  "Frontend Infrastructure",
-  "Observability UI",
-  "Developer Tools",
-  "Real-Time Systems",
-  "Operational Dashboards",
-  "API Contracts",
-  "Media Workflows",
-  "Testing",
+  "JavaScript",
+  "Next.js",
+  "HTML",
+  "CSS",
+  "Node.js",
+  "Flask",
+  "PostgreSQL",
+  "Responsive Design"
 ] as const;
 
 export const recruiterSnapshot = [
   {
-    title: "Frontend Infrastructure",
-    description:
-      "React, TypeScript, component systems, routing, state boundaries, responsive layouts, accessibility, and UI architecture for product surfaces that need to hold up over time.",
+    "title": "Front-End Development",
+    "description": "React and TypeScript interfaces, responsive HTML/CSS, Next.js pages, and component-based application views."
   },
   {
-    title: "Observability + Dashboards",
-    description:
-      "Operational views, reporting interfaces, filters, logs, metrics-style panels, loading/error/empty states, and dashboard flows that help teams scan system behavior quickly.",
+    "title": "Full-Stack Applications",
+    "description": "Node.js/Express or Flask APIs, PostgreSQL data, authentication, and user-scoped CRUD workflows."
   },
   {
-    title: "Developer Tools + Workflow",
-    description:
-      "API-driven workflows, documentation, test-minded iteration, AI-assisted development, internal tools, and UI patterns that reduce friction for builders and operators.",
+    "title": "Published Websites & Previews",
+    "description": "Aeterna Spa’s live website and the Deer Creek and Mark the Shark previews show media-driven interfaces and responsive fallbacks."
   },
   {
-    title: "Media + Real-Time Systems",
-    description:
-      "Real-time engagement platforms, streaming-adjacent workflows, content discovery, asset handoffs, quality control, and calm debugging when live workflows are moving.",
-  },
+    "title": "Tools & Workflow",
+    "description": "Git, GitHub, and Vite support the projects shown here, from source changes to working web pages."
+  }
 ] as const;
 
-export const mediaEdgeIntro =
-  "My earlier work includes a Republic Records internship and a Sony production deal. That background informs my approach to collaboration, technical problem-solving, and clear delivery.";
-
-export const mediaEdgeCards = [
+export const aboutCards = [
   {
-    title: "Signal flow -> System debugging",
-    description:
-      "Following signal paths in production maps directly to tracing data flow, UI state, APIs, and failure boundaries in software.",
+    "title": "Full-time opportunities",
+    "description": "Seeking full-time front-end or full-stack engineering opportunities; open to remote opportunities."
   },
   {
-    title: "Session reliability -> Production reliability",
-    description:
-      "High-pressure sessions built habits around uptime, fallback thinking, calm incident response, and clear operational handoffs.",
-  },
-  {
-    title: "Asset handoffs -> Content/workflow systems",
-    description:
-      "File organization, media delivery, and quality control translate into cleaner content systems, asset workflows, and operational tooling.",
-  },
-  {
-    title: "Client deadlines -> Clear communication under pressure",
-    description:
-      "Technical work under deadline pressure strengthened requirements clarity, stakeholder updates, and steady debugging.",
-  },
+    "title": "Earlier experience",
+    "description": "Music production under a Sony Music Entertainment production deal and an internship at Republic Records."
+  }
 ] as const;
 
 export const certifications = [
   {
-    title: "Bachelor of Science, Computer Science",
-    issuer: "St. John's University",
-    description:
-      "2016–2018.",
+    "title": "Bachelor of Science in Computer Science",
+    "issuer": "St. John's University",
+    "description": "2016 - 2018"
   },
   {
-    title: "Associate of Science, Computer Science",
-    issuer: "Nassau Community College",
-    description:
-      "2014–2016.",
+    "title": "Associate of Science in Computer Science",
+    "issuer": "Nassau Community College",
+    "description": "2014 - 2016"
   },
   {
-    title: "Foundations of Cybersecurity",
-    issuer: "Google",
-    description:
-      "Security fundamentals for risk awareness, systems thinking, and safer software development habits.",
+    "title": "Foundations of Cybersecurity",
+    "issuer": "Google",
+    "description": "Foundational cybersecurity coursework."
   },
   {
-    title: "AI Fluency: Framework & Foundations",
-    issuer: "Anthropic",
-    description:
-      "Foundational AI fluency for modern software workflows, evaluation habits, and responsible AI product thinking.",
-  },
-  {
-    title: "Code in Action / Claude 101",
-    issuer: "Claude",
-    description:
-      "Applied Claude workflow learning for AI-assisted development, prompt patterns, and iterative engineering support.",
-  },
+    "title": "AI Fluency: Framework & Foundations",
+    "issuer": "Anthropic",
+    "description": "Foundational AI fluency coursework."
+  }
 ] as const;

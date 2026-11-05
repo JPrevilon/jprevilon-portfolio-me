@@ -14,6 +14,7 @@ import {
   Terminal,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { ButtonLink } from "@/components/button-link";
 import { ProjectCard } from "@/components/project-card";
@@ -23,12 +24,12 @@ import { experience } from "@/data/experience";
 import {
   certifications,
   heroBadges,
-  mediaEdgeCards,
-  mediaEdgeIntro,
+  aboutCards,
   profile,
   recruiterSnapshot,
+  resumeDownloads,
 } from "@/data/profile";
-import { projects } from "@/data/projects";
+import { portfolioProjects } from "@/data/projects";
 import { stackGroups, strengths } from "@/data/skills";
 
 export default function Home() {
@@ -76,6 +77,9 @@ export default function Home() {
             <p className="mt-1 break-words text-sm font-medium text-zinc-500 sm:text-base">
               {profile.secondaryTitle}
             </p>
+            <p className="mt-3 max-w-3xl text-sm leading-6 text-[#f2c879]">
+              {profile.availability}
+            </p>
             <h1
               id="hero-title"
               className="mt-4 max-w-5xl text-3xl font-semibold leading-[1.06] text-white sm:mt-5 sm:text-5xl lg:text-6xl"
@@ -106,19 +110,22 @@ export default function Home() {
               >
                 Contact Me
               </ButtonLink>
-              <ButtonLink
-                href={profile.resumePath}
-                download
-                icon={<Download size={18} aria-hidden="true" />}
-                className="w-full sm:w-auto"
-              >
-                Download Resume
-              </ButtonLink>
+              {resumeDownloads.map((resume) => (
+                <ButtonLink
+                  key={resume.href}
+                  href={resume.href}
+                  download
+                  icon={<Download size={18} aria-hidden="true" />}
+                  className="w-full sm:w-auto"
+                >
+                  {resume.label}
+                </ButtonLink>
+              ))}
             </div>
 
             <div
               className="mt-6 flex max-w-4xl flex-wrap gap-2 sm:mt-8"
-              aria-label="Credibility badges"
+              aria-label="Selected technical skills"
             >
               {heroBadges.map((badge) => (
                 <span
@@ -174,15 +181,15 @@ export default function Home() {
             <SectionHeading
               id="projects-title"
               eyebrow="Featured Projects"
-              title="Live websites and case studies across interactive frontend experiences, dashboards, and real-time systems."
+              title="Published websites, website previews, and application projects."
             >
-              Selected work showing product ownership, structured data flow,
-              dashboard UX, API integration, and operational thinking.
+              Selected work shows the interface, implemented features, and
+              current status of each project.
             </SectionHeading>
           </Reveal>
 
           <div className="mt-10 grid gap-5 lg:grid-cols-2 xl:gap-6">
-            {projects.map((project, index) => (
+            {portfolioProjects.map((project, index) => (
               <Reveal key={project.slug} delay={(index % 2) * 0.06}>
                 <ProjectCard project={project} />
               </Reveal>
@@ -197,11 +204,10 @@ export default function Home() {
             <SectionHeading
               id="stack-title"
               eyebrow="Technical Stack"
-              title="A practical stack for infrastructure-facing product work."
+              title="Tools used across the projects shown here."
             >
-              Organized around how Joshua ships: clean interfaces, API
-              contracts, testable workflows, and system behavior that is easier
-              to inspect.
+              Front-end interfaces, application APIs, relational data, and
+              source-control workflows.
             </SectionHeading>
           </Reveal>
 
@@ -243,11 +249,10 @@ export default function Home() {
             <SectionHeading
               id="experience-title"
               eyebrow="Experience"
-              title="Product engineering with a production reliability streak."
+              title="Website and application development through owned ventures."
             >
-              A timeline spanning full-stack product ownership, data-heavy
-              interfaces, testing, workflow reliability, and technical media
-              operations.
+              Freelance website work, self-employed ventures, and earlier music
+              and internship experience.
             </SectionHeading>
           </Reveal>
 
@@ -271,10 +276,13 @@ export default function Home() {
                       <p className="mt-2 text-sm text-zinc-300 sm:text-base">
                         {item.company} · {item.employmentType}
                       </p>
-                      {item.location ? (
-                        <p className="mt-1 text-sm text-zinc-500">
-                          {item.location}
-                        </p>
+                      {item.projectPath ? (
+                        <Link
+                          href={item.projectPath}
+                          className="mt-2 inline-block text-sm text-[#37d5ff] underline underline-offset-4"
+                        >
+                          PULSE application case study
+                        </Link>
                       ) : null}
                     </div>
                     <ul className="space-y-2.5 text-[13px] leading-6 text-zinc-300 sm:text-sm sm:leading-7">
@@ -298,12 +306,11 @@ export default function Home() {
           <Reveal>
             <SectionHeading
               id="strengths-title"
-              eyebrow="Engineering Strengths"
-              title="The habits behind the interfaces."
+              eyebrow="Project Capabilities"
+              title="Work demonstrated in the project details."
             >
-              Strengths tuned for teams building complex workflows,
-              infrastructure-facing dashboards, internal tools, AI-enabled
-              products, and operational product surfaces.
+              The examples below are grounded in the websites, previews, and
+              application code linked in this portfolio.
             </SectionHeading>
           </Reveal>
 
@@ -331,15 +338,15 @@ export default function Home() {
           <Reveal>
             <SectionHeading
               id="media-title"
-              eyebrow="Media / Production Edge"
-              title="A media background that strengthens software delivery."
+              eyebrow="About"
+              title="Front-end and full-stack development."
             >
-              {mediaEdgeIntro}
+              {profile.about}
             </SectionHeading>
           </Reveal>
           <Reveal delay={0.08}>
             <div className="grid gap-4 sm:grid-cols-2">
-              {mediaEdgeCards.map((item) => (
+              {aboutCards.map((item) => (
                 <article key={item.title} className="glass-card p-4 sm:p-5">
                   <div className="flex gap-3 sm:gap-4">
                     <Radio
@@ -371,8 +378,8 @@ export default function Home() {
               eyebrow="Education & Learning"
               title="Computer science education and continued learning."
             >
-              Computer science degrees, security
-              fundamentals, and modern AI workflow learning.
+              Computer science degrees, cybersecurity foundations, and
+              AI fluency coursework.
             </SectionHeading>
           </Reveal>
           <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -423,11 +430,13 @@ export default function Home() {
                 <span className="text-zinc-300">{profile.location}</span>
               </div>
               <div className="grid gap-2 text-sm sm:grid-cols-[9rem_1fr]">
+                <span className="font-semibold text-white">Availability</span>
+                <span className="text-zinc-300">{profile.availability}</span>
+              </div>
+              <div className="grid gap-2 text-sm sm:grid-cols-[9rem_1fr]">
                 <span className="font-semibold text-white">Focus</span>
                 <span className="text-zinc-300">
-                  Frontend infrastructure, React/TypeScript interfaces,
-                  observability UI, APIs, dashboards, developer tools, and
-                  media-aware systems.
+                  {profile.focus}
                 </span>
               </div>
               <div className="mt-4 grid grid-cols-1 gap-2 min-[360px]:grid-cols-2 sm:flex sm:flex-wrap sm:gap-3">
@@ -456,14 +465,17 @@ export default function Home() {
                 >
                   LinkedIn
                 </ButtonLink>
-                <ButtonLink
-                  href={profile.resumePath}
-                  download
-                  icon={<Download size={18} aria-hidden="true" />}
-                  className="w-full sm:w-auto"
-                >
-                  Download Resume
-                </ButtonLink>
+                {resumeDownloads.map((resume) => (
+                  <ButtonLink
+                    key={resume.href}
+                    href={resume.href}
+                    download
+                    icon={<Download size={18} aria-hidden="true" />}
+                    className="w-full sm:w-auto"
+                  >
+                    {resume.label}
+                  </ButtonLink>
+                ))}
               </div>
             </div>
           </Reveal>

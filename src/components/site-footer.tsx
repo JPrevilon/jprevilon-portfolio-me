@@ -7,8 +7,8 @@ export function SiteFooter() {
     <footer className="border-t border-white/10 bg-[#050505]">
       <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 text-sm text-zinc-400 sm:px-6 lg:px-8 md:flex-row md:items-center md:justify-between">
         <p>
-          Built for {profile.name} - full-stack products, dashboards, AI, APIs,
-          and media-aware workflows.
+          {profile.name} — React and TypeScript interfaces, responsive websites,
+          and full-stack applications.
         </p>
         <div className="flex flex-wrap items-center gap-3">
           <a

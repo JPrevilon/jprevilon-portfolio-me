@@ -255,7 +255,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <List items={project.decisions} />
             </CaseStudySection>
 
-            <CaseStudySection title="Quality / Testing">
+            <CaseStudySection title="Implementation Notes">
               <List items={project.quality} />
             </CaseStudySection>
 
