@@ -19,7 +19,7 @@ export const experience: ExperienceItem[] = [
     "employmentType": "Freelance"
   },
   {
-    "title": "Founder & Full-Stack Developer",
+    "title": "Front-End Engineer",
     "company": "Pulse Interactive",
     "dates": "Nov 2024 - Nov 2025",
     "bullets": [
@@ -30,7 +30,7 @@ export const experience: ExperienceItem[] = [
     "projectPath": "/projects/pulse"
   },
   {
-    "title": "Founder & Web Developer",
+    "title": "Web Developer",
     "company": "White Sapphire",
     "dates": "2020 - 2024",
     "bullets": [

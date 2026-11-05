@@ -23,7 +23,7 @@ Founder & Full-Stack Software Engineer | Freelance | 2026 - Present
 
 ### Pulse Interactive
 
-Founder & Full-Stack Developer | Self-employed | Nov 2024 - Nov 2025
+Front-End Engineer | Self-employed | Nov 2024 - Nov 2025
 
 - Built a city-based venue-streaming application with Next.js, React, TypeScript, Node.js/Express APIs, and PostgreSQL.
 - Implemented JWT-protected API routes and Socket.IO updates for venue-streaming and activity workflows.
@@ -32,7 +32,7 @@ PULSE is the application developed through this owned venture. Associate the PUL
 
 ### White Sapphire
 
-Founder & Web Developer | Self-employed | 2020 - 2024
+Web Developer | Self-employed | 2020 - 2024
 
 - Created websites and web pages for businesses, artists, and creators based on their content and audience goals.
 - Planned and produced promotional content and publishing schedules for YouTube, Twitch, and Kick.

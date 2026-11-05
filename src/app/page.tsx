@@ -249,7 +249,7 @@ export default function Home() {
             <SectionHeading
               id="experience-title"
               eyebrow="Experience"
-              title="Website and application development through owned ventures."
+              title="Website and application development."
             >
               Freelance website work, self-employed ventures, and earlier music
               and internship experience.

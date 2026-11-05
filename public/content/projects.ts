@@ -198,7 +198,7 @@ export const projects: Project[] = [
     slug: "pulse",
     name: "PULSE",
     subtitle: "City-Based Venue-Streaming Application",
-    role: "Founder & Full-Stack Developer — Pulse Interactive",
+    role: "Front-End Engineer — Pulse Interactive",
     status: "Featured",
     image: "/screenshots/pulse.png",
     imageAlt: "Pulse real-time streaming platform dashboard and architecture visual",
@@ -208,7 +208,7 @@ export const projects: Project[] = [
     caseStudyImageWidth: 1440,
     caseStudyImageHeight: 900,
     description:
-      "Built PULSE through my own venture, Pulse Interactive: a city-based venue-streaming application with a Next.js/React interface, TypeScript, Node.js/Express APIs, and PostgreSQL.",
+      "My work at Pulse Interactive includes PULSE, a city-based venue-streaming application with a Next.js/React interface, TypeScript, Node.js/Express APIs, and PostgreSQL.",
     tech: [
       "React",
       "Next.js",
